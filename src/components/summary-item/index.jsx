@@ -24,7 +24,7 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
       >
         {link ? linkContent : name}
       </h3>
-      <p className={classes.description}>{description}</p>
+      <p className={classes.description} dangerouslySetInnerHTML={{__html: description}} ></p>
     </div>
   );
 };
