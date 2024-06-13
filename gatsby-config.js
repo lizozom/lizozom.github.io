@@ -48,9 +48,9 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'Catomolo dockerization',
+        name: 'Catomolo infrastructure',
         description:
-          'Catomolo is a game that was developed for the Israeli environment protection agency. I helped the team dockerize their infrastructure, and set up a CI/CD pipeline using Vercel.',
+          'Catomolo is a game that was developed for the Israeli environment protection agency. I helped the team update their infrastructure, including developing a modern next.js game server and setting up monitoring in place.',
         link: 'https://play.google.com/store/apps/details?id=com.mooistudios.dedi',
       },
       {
