@@ -48,6 +48,12 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
+        name: 'Catomolo dockerization of infrastructure',
+        description:
+          'Catomolo is a game that was developed for the Israeli environment protection agency. I helped the team dockerize their infrastructure, and set up a CI/CD pipeline using Vercel.',
+        link: 'https://play.google.com/store/apps/details?id=com.mooistudios.dedi',
+      },
+      {
         name: 'ncnn WebAssembly YOLOV5',
         description:
           'Contibution to the OpenSource project that allows running YOLOV5 inference directly in the browser.',
