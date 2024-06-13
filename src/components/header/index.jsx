@@ -5,16 +5,16 @@ import React from 'react';
 import profileImg from '../../images/me.jpg';
 
 const classes = {
-  wrapper: 'block mb-6 md:flex',
-  imageWrapper: 'w-full max-w-150',
+  wrapper: 'block mb-6 md:flex header',
+  imageWrapper: 'w-full max-w-150 hide-in-print',
   image: 'rounded-full transform transition-all duration-150 hover:scale-105',
-  contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
+  contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20 content-wrapper',
   name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
-  description: 'text-gray-600',
+  description: 'text-gray-600 hide-in-print',
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4',
   link:
-    'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
+    'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black header-link',
 };
 
 const Header = ({ metadata = {}, noBlog = false }) => {

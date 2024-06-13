@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz | Full-Stack Developer | AI & Observability Enthusiast`,
     // Description that goes under your name in main bio
-    description: `Ex-Elastic Engineer | AI & Observability Consultant | Open Source Enthusiast`,
+    description: `Ex-Elastic Engineer | AI & Observability Consultant`,
     // Optional: Twitter account handle
     author: null,
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',
@@ -18,8 +18,8 @@ module.exports = {
     // Content of the About Me section
     about: `I am a seasoned software engineer and team lead with extensive experience in <b>full-stack development, performance optimization, and leading technical teams</b>. I’ve worked with technologies like <b>JavaScript, TypeScript, Next.js and Python</b>, across industries such as ad-tech, finance, and big data. 
     <br/><br/>
-    My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
-<br/><br/>
+    <span class="hide-in-print">My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
+<br/><br/></span>
 <b>I am currently seeking consulting or freelance opportunities, as well as part-time roles</b> where I can leverage my skills in software development and team leadership. Outside of work, I find balance through woodworking, travel and baking.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [

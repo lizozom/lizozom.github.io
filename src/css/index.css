@@ -253,3 +253,49 @@ pre[class*='language-'] {
   padding: 2px 5px !important;
   text-shadow: none !important;
 }
+
+@media print {
+  p a,
+  .header .tracking-wider a,
+  .section-wrapper a {
+    color: #42a8c0 !important ;
+  }
+
+  .page-wrapper {
+    padding: 0 16px !important;
+  }
+
+  .header {
+    margin: 0 !important;
+  }
+  
+  .header .tracking-wider {
+    margin-top: 10px !important;
+  }
+
+  .header .content-wrapper {
+    padding: 0;
+  }
+  .section-wrapper {
+    padding-top: 0 !important;
+  }
+
+  .section-wrapper .section-title {
+    padding: 10px 0 !important;
+  }
+
+  .section-wrapper .item-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;  
+  }
+  
+
+  .hide-in-print {
+    display: none !important;
+  }
+}

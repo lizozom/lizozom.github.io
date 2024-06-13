@@ -3,7 +3,7 @@ import React from 'react';
 
 const classes = {
   wrapper: 'mb-6',
-  name: 'font-semibold text-gray-900 pb-1',
+  name: 'font-semibold text-gray-900 pb-1 item-link',
   description: 'text-md text-gray-600 font-light',
 };
 
