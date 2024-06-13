@@ -16,7 +16,11 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/lizak/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I am a seasoned software engineer and team lead with extensive experience in <b>full-stack development, performance optimization, and leading technical teams</b>. I’ve worked with technologies like <b>JavaScript, TypeScript, Next.js and Python</b>, across industries such as ad-tech, finance, and big data. 
+    <br/><br/>
+    My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
+<br/><br/>
+<b>I am currently seeking consulting or freelance opportunities, as well as part-time roles</b> where I can leverage my skills in software development and team leadership. Outside of work, I find balance through woodworking, travel and baking.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -32,16 +36,22 @@ module.exports = {
         link: 'https://tubeuni.app/',
       },
       {
-        name: 'ncnn WebAssembly YoLov5',
+        name: 'Goods.io - Elasticsearch integration and analytics',
         description:
-          'Contibution to the OpenSource project that allows running YOLOV5 inference directly in the browser.',
-        link: 'https://github.com/lizozom/ncnn-webassembly-yolov5',
+          'Goods.io is a company that provites a single platform for order fullfulment and inventory management. I helped the team develop an analytics strategy, integrate Elasticsearch into their platform, and develop dashboards for their customers.',
+        link: 'https://mygoods.io/',
       },
       {
         name: 'Outburn LTD Automation and OpenSource infrastructure',
         description:
-          'Outburn LTD is a company that provides a FHIR based API for healthcare providers. I was helped Outburn ready their codebase for open source contributions including an automation pipeline using GitHub Actions, proper usage of TypeScript and linting and contribution documentation.',
+          'Outburn LTD is a company that provides a FHIR based API for healthcare providers. I helped Outburn ready their codebase for open source contributions, including an automation pipeline using GitHub Actions, proper usage of TypeScript and linting and contribution documentation.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+      {
+        name: 'ncnn WebAssembly YOLOV5',
+        description:
+          'Contibution to the OpenSource project that allows running YOLOV5 inference directly in the browser.',
+        link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',
       },
       {
         name: 'Custom Kibana Theme Plugin',
@@ -68,7 +78,7 @@ module.exports = {
     experience: [
       {
         name: 'Independent Consultant & Developer',
-        description: '',
+        description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I helped them with their software development, architecture, and performance optimization. I also contributed to several open-source projects.',
         link: '',
       },
       {
@@ -97,16 +107,16 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), TypeScript, Node.js, Next.js, Express.js, Matter.js, Python, Django, Android',
+          'JavaScript (ES6+), TypeScript,  Next.js, Node.js, Express.js, Matter.js, Highcharts, Python, Django, Android',
       },
       {
         name: 'Databases',
-        description: 'Elasticsearch, Redis, PostreSQL, BigQuery',
+        description: 'Elasticsearch, OpenSearch, Redis, PostreSQL, BigQuery',
       },
       {
         name: 'Other',
         description:
-          'Docker, GooGle Cloud Services (gcp), Vertex AI, Roboflow, Webpack, ESLINT, Vercel, CI / CD, API design, Agile / Scrum',
+          'Docker, Google Cloud Services (gcp), Vertex AI, Roboflow, Webpack, ESLINT, Vercel, CI / CD, Github Actions, Jenkins, API design, Agile / Scrum',
       },
     ],
   },

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  b {
+    font-weight: 500;
+  }
+  
   .blog-content {
     @apply text-gray-600;
     @apply max-w-screen-md;

@@ -6,7 +6,7 @@ const SectionAbout = ({ about }) => {
   return (
     <Section title="About Me">
       <div className="mb-6">
-        <p>{about}</p>
+        <p dangerouslySetInnerHTML={{__html:about}}></p>
       </div>
     </Section>
   );
