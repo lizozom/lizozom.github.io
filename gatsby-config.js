@@ -26,7 +26,7 @@ module.exports = {
       {
         name: 'MoMa AI Assistant (Nayax)',
         description:
-          'Implemented a ReAct AI assstant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintainer their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, implemented automation, evaluation as well as monitoring on top of Elasticsearch.',
+          'Implemented a ReAct AI assistant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintain their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, including <b>prompt engineering, automation, evaluation and monitoring</b> on top of Elasticsearch.',
         link: 'https://www.nayax.com/',
       },
       {
