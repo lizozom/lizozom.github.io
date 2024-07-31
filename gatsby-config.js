@@ -24,6 +24,12 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
+        name: 'MoMa AI Assistant (Nayax)',
+        description:
+          'Implemented a ReAct AI assstant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintainer their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, implemented automation, evaluation as well as monitoring on top of Elasticsearch.',
+        link: 'https://www.nayax.com/',
+      },
+      {
         name: 'Human or Not (AI21)',
         description:
           '<b>**<a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award Winner!</a>**</b> A Social Turing Game. Chat with someone for two minutes, and try to figure out if it was a fellow human or an AI bot. Think you can tell the difference?',
