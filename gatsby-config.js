@@ -20,7 +20,7 @@ module.exports = {
     <br/><br/>
     <span class="hide-in-print">My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
 <br/><br/></span>
-<b>I am currently seeking consulting or freelance opportunities, as well as part-time roles</b> where I can leverage my skills in software development and team leadership. Outside of work, I find balance through woodworking, travel and baking.`,
+<b> Seeking my next challenge to apply my  software development and leadership skills.</b> Outside of work, I find balance through woodworking, travel and baking.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -89,6 +89,11 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
+        name: 'Big Data Boutique',
+        description: '<b>Gen AI Team Lead, August 2024 - Present</b><br/>Leading a team of 3 engineers (Data Science, Full Stack and DevOps). Developed several production RAG applications on top of OpenSearch\\ElasticSearch, using aws cloud tools such as Bedrock, SageMaker, EC2, AWS Lambda, ECS, S3 with all leading LLMs (Gemini, Claude, GPT-x)',
+        link: 'https://bigdataboutique.com/',
+      },
+      {
         name: 'Independent Consultant & Developer',
         description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I helped them with their software development, architecture, and performance optimization. I also contributed to several open-source projects.',
         link: '',
@@ -119,16 +124,16 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), TypeScript,  Next.js, Node.js, Express.js, Matter.js, Highcharts, Python, Django, Android',
+          'JavaScript (ES6+), TypeScript,  Next.js, Node.js',
       },
       {
         name: 'Databases',
-        description: 'Elasticsearch, OpenSearch, Redis, PostreSQL, BigQuery',
+        description: 'Elasticsearch, OpenSearch, Redis, PostreSQL, BigQuery, RedShift',
       },
       {
         name: 'Other',
         description:
-          'Docker, Google Cloud Services (gcp), Vertex AI, Roboflow, Webpack, ESLINT, Vercel, CI / CD, Github Actions, Jenkins, API design, Agile / Scrum',
+          'GCP, Vertex AI, AWS, Bedrock, Docker, Roboflow, Vercel, Github Actions',
       },
     ],
   },
