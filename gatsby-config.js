@@ -132,7 +132,7 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), TypeScript,  Next.js, Node.js',
+          'Python, (ES6+), TypeScript,  Next.js, Node.js',
       },
       {
         name: 'Databases',
