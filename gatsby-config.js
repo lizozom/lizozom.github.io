@@ -20,26 +20,34 @@ module.exports = {
     <br/><br/>
     <span class="hide-in-print">My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
 <br/><br/></span>
-<b> Seeking my next challenge to apply my  software development and leadership skills.</b> Outside of work, I find balance through woodworking, travel and baking.`,
+<b> Seeking my next challenge to apply my  software development, open source and leadership skills.</b> Outside of work, I find balance through woodworking, travel and baking.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
-      {
-        name: 'MoMa AI Assistant (Nayax)',
-        description:
-          'Implemented a ReAct AI assistant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintain their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, including <b>prompt engineering, automation, evaluation and monitoring</b> on top of Elasticsearch.',
-        link: 'https://www.nayax.com/',
-      },
       {
         name: 'Human or Not (AI21)',
         description:
           '<b>**<a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award Winner!</a>**</b> A Social Turing Game. Chat with someone for two minutes, and try to figure out if it was a fellow human or an AI bot. Think you can tell the difference?',
         link: 'https://humanornot.ai/',
+        image_link: "https://assets.recogmedia.net/1/139/Entry_Uploads/288120-thumb.jpg",
       },
       {
         name: 'Tube Uni',
         description:
           '<b>**<a href="https://devpost.com/software/tube-uni" target="_blank">Google AI Hackathon Winner!</a>**</b> An AI-powered application that generates custom podcasts on any topic, using Gemini 1.5 Pro.',
         link: 'https://tubeuni.app/',
+        image_link: "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/874/400/datas/medium.png"
+      },
+      {
+        name: 'ShRaga AI Agent (Max Security)',
+        description:
+          'Implemented an agentic AI assistant for Max Security, a company that provides comprehensive protection and intelligence to proactively mitigate physical threats. The assistant has access to multiple geo political datasets and can provide question answering as well as advanced geo-spatial anlaysis of threats. Built on top of AWS, OpenSearch, and Claude.',
+        link: 'https://www.max-security.com/',
+      },
+      {
+        name: 'MoMa AI Assistant (Nayax)',
+        description:
+          'Implemented a ReAct AI assistant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintain their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, including <b>prompt engineering, automation, evaluation and monitoring</b> on top of Elasticsearch.',
+        link: 'https://www.nayax.com/',
       },
       {
         name: 'Goods.io - Elasticsearch integration and analytics',
@@ -95,7 +103,7 @@ module.exports = {
       },
       {
         name: 'Independent Consultant & Developer',
-        description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I helped them with their software development, architecture, and performance optimization. I also contributed to several open-source projects.',
+        description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I focus on projects that focus on developing LLM-powered user experiences, powered by big data and search capabilities',
         link: '',
       },
       {

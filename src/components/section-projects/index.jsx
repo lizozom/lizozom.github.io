@@ -14,6 +14,7 @@ const SectionProjects = ({ projects }) => {
           name={project.name}
           description={project.description}
           link={project.link}
+          image_link={project.image_link}
         />
       ))}
     </Section>
