@@ -42,18 +42,21 @@ module.exports = {
         description:
           'Implemented an agentic AI assistant for Max Security, a company that provides comprehensive protection and intelligence to proactively mitigate physical threats. The assistant has access to multiple geo political datasets and can provide question answering as well as advanced geo-spatial anlaysis of threats. Built on top of AWS, OpenSearch, and Claude.',
         link: 'https://www.max-security.com/',
+        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
       },
       {
         name: 'MoMa AI Assistant (Nayax)',
         description:
           'Implemented a ReAct AI assistant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintain their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, including <b>prompt engineering, automation, evaluation and monitoring</b> on top of Elasticsearch.',
         link: 'https://www.nayax.com/',
+        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn5BlEfjbCB1kGKNSCyeHwxyLn7tfg3Suxw&s"
       },
       {
         name: 'Goods.io - Elasticsearch integration and analytics',
         description:
           'Goods.io is a company that provites a single platform for order fullfulment and inventory management. I helped the team develop an analytics strategy, integrate Elasticsearch into their platform, and develop dashboards for their customers.',
         link: 'https://mygoods.io/',
+        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9A-bQa7BGhsCLCMAuoO1OgL3uqsfcdjHJg&s"
       },
       {
         name: 'Outburn LTD Automation and OpenSource infrastructure',
