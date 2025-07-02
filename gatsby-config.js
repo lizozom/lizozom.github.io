@@ -16,11 +16,15 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/lizak/`,
     // Content of the About Me section
-    about: `I am a seasoned software engineer and team lead with extensive experience in <b>full-stack development, performance optimization, and leading technical teams</b>. I’ve worked with technologies like <b>JavaScript, TypeScript, Next.js and Python</b>, across industries such as ad-tech, finance, and big data. 
+    about: `I’m a seasoned software engineer and team lead with deep experience in building scalable, high-performance solutions for search, analytics, and GenAI applications. My background spans ad-tech, finance, and big data, working with technologies like JavaScript, TypeScript, Next.js, and Python.
     <br/><br/>
-    <span class="hide-in-print">My expertise includes <b>LLM powered applications, analytics, and observability</b>. Some recent notable achievements include winning the <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and the Google AI Hackathon for "Tube Uni," along with several contributions to open-source projects like ncnn WebAssembly YOLOV5.
-<br/><br/></span>
-<b> Seeking my next challenge to apply my  software development, open source and leadership skills.</b> Outside of work, I find balance through woodworking, travel and baking.`,
+    I specialize in Retrieval-Augmented Generation (RAG), autonomous agents, hybrid and semantic search optimization, and consult on GenAI-powered products from architecture to deployment. As a consultant, I’ve delivered end-to-end projects for clients including Nayax, Cover, Max Security, and ScreenSteps.
+    <br/><br/>
+    Recent highlights include a <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and winning the Google AI Hackathon for "Tube Uni."
+    <br/><br/>
+    <b>I’m always interested in new consulting projects and partnerships - if you’re building with GenAI, search, or LLMs, let’s connect.</b>
+    <br/><br/>
+    Outside of work, I recharge through woodworking, travel, and baking.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
