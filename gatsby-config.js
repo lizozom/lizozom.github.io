@@ -5,9 +5,9 @@ module.exports = {
     // Your Name
     name: 'Liza Katz',
     // Main Site Title
-    title: `Liza Katz | Full-Stack Developer | AI & Observability Enthusiast`,
+    title: `Liza Katz | Full-Stack Developer & GenAI Consultant | RAG, LLMs, AI Agents`,
     // Description that goes under your name in main bio
-    description: `Ex-Elastic | GenAI & AI Search Consultant | RAG, Agents, LLMs, Open Source`,
+    description: `Seasoned Full-Stack Developer & GenAI Consultant | Ex-Elastic | RAG, Agents, LLMs, Search Optimization | Webby Award Winner | Python, TypeScript, React, Next.js`,
     // Optional: Twitter account handle
     author: null,
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',

@@ -19,9 +19,39 @@ const Index = ({ data }) => {
   const skills = get(data, 'site.siteMetadata.skills', false);
   const noBlog = !posts || !posts.length;
 
+  const seoKeywords = [
+    'Liza Katz',
+    'Full Stack Developer',
+    'AI Engineer',
+    'GenAI Consultant',
+    'RAG',
+    'Retrieval Augmented Generation',
+    'LLM',
+    'Large Language Models',
+    'Elasticsearch',
+    'OpenSearch',
+    'Python',
+    'TypeScript',
+    'JavaScript',
+    'React',
+    'Next.js',
+    'Machine Learning',
+    'Search Optimization',
+    'AI Agents',
+    'Ex-Elastic',
+    'Software Engineer',
+    'Team Lead',
+    'Webby Award Winner',
+    'Google AI Hackathon Winner'
+  ];
+
   return (
     <Layout>
-      <SEO />
+      <SEO 
+        title="Home"
+        description="Liza Katz - Seasoned Full-Stack Developer & GenAI Consultant specializing in RAG, AI Agents, LLMs, and Search Optimization. Ex-Elastic engineer with Webby Award and Google AI Hackathon wins."
+        keywords={seoKeywords}
+      />
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
