@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz | Full-Stack Developer & GenAI Consultant | RAG, LLMs, AI Agents`,
     // Description that goes under your name in main bio
-    description: `Seasoned Full-Stack Developer & GenAI Consultant | Ex-Elastic | RAG, Agents, LLMs, Search Optimization | Webby Award Winner | Python, TypeScript, React, Next.js`,
+    description: `Seasoned Full-Stack Developer & GenAI Consultant | Ex-Elastic | RAG, Agents, LLMs, Search Optimization`,
     // Optional: Twitter account handle
     author: null,
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',
@@ -35,18 +35,32 @@ module.exports = {
         image_link: "https://assets.recogmedia.net/1/139/Entry_Uploads/288120-thumb.jpg",
       },
       {
+        name: 'Scout AI Agent (Max Security)',
+        description:
+          'Implemented an agentic AI assistant for Max Security, a company that provides comprehensive protection and intelligence to proactively mitigate physical threats. The assistant has access to multiple geo political datasets and can provide question answering as well as advanced geo-spatial anlaysis of threats. Built on top of AWS, OpenSearch, and Claude.',
+        link: 'https://www.max-security.com/',
+        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
+      },
+      {
+        name: 'Data Analytics Pipelines and RAG Architecture (Cover)',
+        description:
+          'Cover is a company that provides insurance solutions. I helped the team design and implement data analytics pipelines and a RAG architecture to improve their claims processing and fraud detection capabilities. Built with AWS, OpenSearch, OpenAI and n8n.',
+        link: 'https://www.cover.co.il/',
+        image_link: "https://www.cover.co.il/wp-content/uploads/2025/03/cover-blue-logo.png"
+      },
+      {
+        name: 'Hybrid Search for customer support (ScreenSteps)',
+        description:
+          'ScreenSteps is a company that provides a knowledge base and customer support platform. I helped the team develop a hybrid search solution that combines traditional keyword search with semantic search using ElasticSearch and AWS Bedrock. The solution allows customers to find relevant articles and answers to their questions more easily.',
+        link: 'https://www.screensteps.com/',
+        image_link: "https://www.screensteps.com/hubfs/2024/Brand/Elements/2024%20Logo%20Updates/Primary%20Logos/0524-Logos-SS-Black.svg"
+      },
+      {
         name: 'Tube Uni',
         description:
           '<b>**<a href="https://devpost.com/software/tube-uni" target="_blank">Google AI Hackathon Winner!</a>**</b> An AI-powered application that generates custom podcasts on any topic, using Gemini 1.5 Pro.',
         link: 'https://tubeuni.app/',
         image_link: "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/874/400/datas/medium.png"
-      },
-      {
-        name: 'ShRaga AI Agent (Max Security)',
-        description:
-          'Implemented an agentic AI assistant for Max Security, a company that provides comprehensive protection and intelligence to proactively mitigate physical threats. The assistant has access to multiple geo political datasets and can provide question answering as well as advanced geo-spatial anlaysis of threats. Built on top of AWS, OpenSearch, and Claude.',
-        link: 'https://www.max-security.com/',
-        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
       },
       {
         name: 'MoMa AI Assistant (Nayax)',
@@ -111,7 +125,7 @@ module.exports = {
       {
         name: 'Independent Consultant & Developer',
         description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I focus on projects that focus on developing LLM-powered user experiences, powered by big data and search capabilities',
-        link: '',
+        link: 'https://lizozom.com/',
       },
       {
         name: 'Elastic',
