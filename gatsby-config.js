@@ -176,6 +176,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -202,9 +209,102 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: [`/dev-404-page/`, `/404/`, `/404.html`, `/offline-plugin-app-shell-fallback/`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            allMarkdownRemark {
+              nodes {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  date
+                }
+              }
+            }
+          }
+        `,
+        serialize: ({ path, ...rest }) => {
+          return {
+            url: path,
+            changefreq: `daily`,
+            priority: path === `/` ? 1.0 : path.includes(`/blog/`) ? 0.8 : 0.5,
+            lastmod: new Date().toISOString(),
+          }
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://lizozom.github.io`,
+        sitemap: `https://lizozom.github.io/sitemap/sitemap-index.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }]
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
-        feeds: []
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                name
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.description || node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `{
+              allMarkdownRemark(
+                sort: { frontmatter: { date: DESC } }
+              ) {
+                nodes {
+                  excerpt
+                  html
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    date
+                    description
+                  }
+                }
+              }
+            }`,
+            output: "/rss.xml",
+            title: "Liza Katz's Blog RSS Feed",
+            description: "Latest blog posts about AI, search technologies, and software engineering",
+          },
+        ],
       },
     },
     {

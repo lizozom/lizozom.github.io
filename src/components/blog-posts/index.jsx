@@ -5,16 +5,20 @@ import SummaryItem from '../summary-item';
 
 const BlogPosts = ({ posts }) => {
   return (
-    <Section title="All Blog Posts">
-      {posts.map((post) => (
-        <SummaryItem
-          key={post.node.fields.slug}
-          name={post.node.frontmatter.title}
-          description={post.node.frontmatter.description}
-          link={post.node.fields.slug}
-          internal
-        />
-      ))}
+    <Section title="Blog Posts">
+      <div className="space-y-0">
+        {posts.map((post, index) => (
+          <SummaryItem
+            key={post.node.fields.slug}
+            name={post.node.frontmatter.title}
+            description={post.node.frontmatter.description}
+            link={post.node.fields.slug}
+            date={post.node.frontmatter.date}
+            isFirstPost={index === 0}
+            internal
+          />
+        ))}
+      </div>
     </Section>
   );
 };
