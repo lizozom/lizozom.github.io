@@ -63,7 +63,7 @@ module.exports = {
       {
         name: 'MoMa AI Assistant (Nayax)',
         description:
-          'Built ReAct AI assistant for vending machine operators, improving maintenance and customer service. Custom OpenAI deployment on Azure with <b>prompt engineering, automation, evaluation and monitoring</b> via Elasticsearch.',
+          'Built ReAct AI assistant for vending machine operators, improving maintenance and customer service. Custom OpenAI deployment on Azure with <b>prompt engineering, automation, evaluation and monitoring</b>.',
         link: 'https://www.nayax.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn5BlEfjbCB1kGKNSCyeHwxyLn7tfg3Suxw&s"
       },
@@ -92,24 +92,24 @@ module.exports = {
           'Open source contribution enabling YOLOV5 inference directly in browsers via WebAssembly.',
         link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',
       },
-      {
-        name: 'Custom Kibana Theme Plugin',
-        description:
-          'Open source Kibana plugin enabling custom themes and branding. Addresses <a href="https://github.com/elastic/kibana/issues/17879" target="_blank">long-requested feature</a> for logos, icons, and UI customization.',
-        link: 'https://github.com/lizozom/custom-kibana-theme',
-      },
+      // {
+      //   name: 'Custom Kibana Theme Plugin',
+      //   description:
+      //     'Open source Kibana plugin enabling custom themes and branding. Addresses <a href="https://github.com/elastic/kibana/issues/17879" target="_blank">long-requested feature</a> for logos, icons, and UI customization.',
+      //   link: 'https://github.com/lizozom/custom-kibana-theme',
+      // },
       // {
       //   name: 'Docker Elastic Observability',
       //   description:
       //     'Docker Compose setup demonstrating full observability stack. Elasticsearch, APM Server, and Node.js agents for metrics and trace reporting.',
       //   link: 'https://github.com/lizozom/docker-elastic-observability-with-apm',
       // },
-      {
-        name: 'DjangoGirls Conference Organizer',
-        description:
-          'Organized 2 DjangoGirls conferences in the RedHat offices in Raanana',
-        link: 'http://railsgirls.com/',
-      }, 
+      // {
+      //   name: 'DjangoGirls Conference Organizer',
+      //   description:
+      //     'Organized 2 DjangoGirls conferences in the RedHat offices in Raanana',
+      //   link: 'http://railsgirls.com/',
+      // }, 
       
       
     ],
