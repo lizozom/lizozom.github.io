@@ -40,7 +40,7 @@ const SummaryItem = ({ name, description, link = false, image_link = null, inter
               <img 
                 src={image_link} 
                 alt={name} 
-                className="w-full h-24 md:h-28 object-cover rounded-lg shadow-sm" 
+                className="w-full h-24 md:h-28 object-contain rounded-lg shadow-sm" 
               />
             </div>
           )}

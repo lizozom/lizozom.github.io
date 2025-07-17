@@ -16,15 +16,13 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/lizak/`,
     // Content of the About Me section
-    about: `I’m a seasoned software engineer and team lead with deep experience in building scalable, high-performance solutions for search, analytics, and GenAI applications. My background spans ad-tech, finance, and big data, working with technologies like JavaScript, TypeScript, Next.js, and Python.
+    about: `Seasoned software engineer and team lead specializing in GenAI, search, and scalable systems. I build RAG applications, AI agents, and hybrid search solutions using Python, TypeScript, Next.js, and modern frameworks.
     <br/><br/>
-    I specialize in Retrieval-Augmented Generation (RAG), autonomous agents, hybrid and semantic search optimization, and consult on GenAI-powered products from architecture to deployment. As a consultant, I’ve delivered end-to-end projects for clients including Nayax, Cover, Max Security, and ScreenSteps.
+    As a consultant, I've delivered end-to-end GenAI projects for clients across industries. My background spans ad-tech, finance, and big data with deep expertise in Elasticsearch, OpenSearch, and LLM-powered applications.
     <br/><br/>
-    Recent highlights include a <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for the LLM game "Human or Not" and winning the Google AI Hackathon for "Tube Uni."
+    Recent wins: <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for "Human or Not" and Google AI Hackathon winner for "Tube Uni."
     <br/><br/>
-    <b>I’m always interested in new consulting projects and partnerships - if you’re building with GenAI, search, or LLMs, let’s connect.</b>
-    <br/><br/>
-    Outside of work, I recharge through woodworking, travel, and baking.`,
+    <b>Available for GenAI consulting, partnerships, public speaking, and private workshops.</b>`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -37,21 +35,21 @@ module.exports = {
       {
         name: 'Scout AI Agent (Max Security)',
         description:
-          'Implemented an agentic AI assistant for Max Security, a company that provides comprehensive protection and intelligence to proactively mitigate physical threats. The assistant has access to multiple geo political datasets and can provide question answering as well as advanced geo-spatial anlaysis of threats. Built on top of AWS, OpenSearch, and Claude.',
+          'Built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. Integrates multiple geopolitical datasets for proactive threat mitigation. AWS, OpenSearch, Claude.',
         link: 'https://www.max-security.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
       },
       {
         name: 'Data Analytics Pipelines and RAG Architecture (Cover)',
         description:
-          'Cover is a company that provides insurance solutions. I helped the team design and implement data analytics pipelines and a RAG architecture to improve their claims processing and fraud detection capabilities. Built with AWS, OpenSearch, OpenAI and n8n.',
+          'Designed data analytics pipelines and RAG architecture for an insurance AI agent. OpenSearch, OpenAI, n8n.',
         link: 'https://www.cover.co.il/',
         image_link: "https://www.cover.co.il/wp-content/uploads/2025/03/cover-blue-logo.png"
       },
       {
         name: 'Hybrid Search for customer support (ScreenSteps)',
         description:
-          'ScreenSteps is a company that provides a knowledge base and customer support platform. I helped the team develop a hybrid search solution that combines traditional keyword search with semantic search using ElasticSearch and AWS Bedrock. The solution allows customers to find relevant articles and answers to their questions more easily.',
+          'Developed hybrid search combining keyword and semantic search for knowledge base platform. Improved customer article discovery and support efficiency. Elasticsearch, AWS Bedrock.',
         link: 'https://www.screensteps.com/',
         image_link: "https://www.screensteps.com/hubfs/2024/Brand/Elements/2024%20Logo%20Updates/Primary%20Logos/0524-Logos-SS-Black.svg"
       },
@@ -65,47 +63,47 @@ module.exports = {
       {
         name: 'MoMa AI Assistant (Nayax)',
         description:
-          'Implemented a ReAct AI assistant for Nayax, a company that provides cashless payment solutions. The assistant is used to help vending machine operators maintain their machines and provide better customer service. I developed the assistant on top of a custom deployment of OpenAI on Azure, including <b>prompt engineering, automation, evaluation and monitoring</b> on top of Elasticsearch.',
+          'Built ReAct AI assistant for vending machine operators, improving maintenance and customer service. Custom OpenAI deployment on Azure with <b>prompt engineering, automation, evaluation and monitoring</b> via Elasticsearch.',
         link: 'https://www.nayax.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn5BlEfjbCB1kGKNSCyeHwxyLn7tfg3Suxw&s"
       },
       {
         name: 'Goods.io - Elasticsearch integration and analytics',
         description:
-          'Goods.io is a company that provites a single platform for order fullfulment and inventory management. I helped the team develop an analytics strategy, integrate Elasticsearch into their platform, and develop dashboards for their customers.',
+          'Developed analytics strategy and Elasticsearch integration for order fulfillment platform. Built customer dashboards for inventory management and order analytics.',
         link: 'https://mygoods.io/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9A-bQa7BGhsCLCMAuoO1OgL3uqsfcdjHJg&s"
       },
       {
         name: 'Outburn LTD Automation and OpenSource infrastructure',
         description:
-          'Outburn LTD is a company that provides a FHIR based API for healthcare providers. I helped Outburn ready their codebase for open source contributions, including an automation pipeline using GitHub Actions, proper usage of TypeScript and linting and contribution documentation.',
+          'Prepared FHIR-based healthcare API codebase for open source contributions. Built automation pipeline with GitHub Actions, TypeScript implementation, and contribution documentation.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
-      {
-        name: 'Catomolo infrastructure',
-        description:
-          'Catomolo is a game that was developed for the Israeli environment protection agency. I helped the team update their infrastructure, including developing a modern next.js game server and setting up monitoring in place.',
-        link: 'https://play.google.com/store/apps/details?id=com.mooistudios.dedi',
-      },
+      // {
+      //   name: 'Catomolo infrastructure',
+      //   description:
+      //     'Modernized infrastructure for Israeli Environmental Protection Agency game. Built Next.js game server and implemented comprehensive monitoring.',
+      //   link: 'https://play.google.com/store/apps/details?id=com.mooistudios.dedi',
+      // },
       {
         name: 'ncnn WebAssembly YOLOV5',
         description:
-          'Contibution to the OpenSource project that allows running YOLOV5 inference directly in the browser.',
+          'Open source contribution enabling YOLOV5 inference directly in browsers via WebAssembly.',
         link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',
       },
       {
         name: 'Custom Kibana Theme Plugin',
         description:
-          'Open Source implementation for a <a href="https://github.com/elastic/kibana/issues/17879" target="_blank">long requested</a> plugin for Kibana allowing customers to Customize Kibana\'s appearance (logos, icons, texts and more)',
+          'Open source Kibana plugin enabling custom themes and branding. Addresses <a href="https://github.com/elastic/kibana/issues/17879" target="_blank">long-requested feature</a> for logos, icons, and UI customization.',
         link: 'https://github.com/lizozom/custom-kibana-theme',
       },
-      {
-        name: 'Docker Elastic Observability',
-        description:
-          'Docker compose setup of an observability use case. Reporting metrics and traces from a nodejs app to Elasticsearch using APM Server using APM RUM and APM Node.js agents.',
-        link: 'https://github.com/lizozom/docker-elastic-observability-with-apm',
-      },
+      // {
+      //   name: 'Docker Elastic Observability',
+      //   description:
+      //     'Docker Compose setup demonstrating full observability stack. Elasticsearch, APM Server, and Node.js agents for metrics and trace reporting.',
+      //   link: 'https://github.com/lizozom/docker-elastic-observability-with-apm',
+      // },
       {
         name: 'DjangoGirls Conference Organizer',
         description:

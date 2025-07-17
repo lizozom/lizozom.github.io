@@ -36,6 +36,29 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         </h1>
         <p className={classes.description}>{metadata.description}</p>
         <ul className={classes.list}>
+          {linkedin && (
+            <li className={classes.item}>
+              <a className={classes.link} href={linkedin}
+                target='_blank'>
+                LinkedIn
+              </a>
+            </li>
+          )}
+          {!noBlog && (
+            <li className={classes.item}>
+              <Link className={classes.link} to="/blog">
+                Blog
+              </Link>
+            </li>
+          )}
+          {github && (
+            <li className={classes.item}>
+              <a className={classes.link} href={github}
+                target='_blank'>
+                GitHub
+              </a>
+            </li>
+          )}
           {stackoverflow && (
             <li className={classes.item}>
               <a
@@ -56,29 +79,6 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               >
                 Twitter
               </a>
-            </li>
-          )}
-          {github && (
-            <li className={classes.item}>
-              <a className={classes.link} href={github}
-                target='_blank'>
-                GitHub
-              </a>
-            </li>
-          )}
-          {linkedin && (
-            <li className={classes.item}>
-              <a className={classes.link} href={linkedin}
-                target='_blank'>
-                LinkedIn
-              </a>
-            </li>
-          )}
-          {!noBlog && (
-            <li className={classes.item}>
-              <Link className={classes.link} to="/blog">
-                Blog
-              </Link>
             </li>
           )}
         </ul>

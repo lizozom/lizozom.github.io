@@ -16,7 +16,7 @@ const SectionBlog = ({ posts }) => {
           internal
         />
       ))}
-      {posts.length >= 5 && (
+      {posts.length >= 3 && (
         <Link className="text-gray-500 text-sm hover:text-black" to="/blog">
           View all posts &rarr;
         </Link>
