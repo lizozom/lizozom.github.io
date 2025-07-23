@@ -14,6 +14,7 @@ const BlogPosts = ({ posts }) => {
             description={post.node.frontmatter.description}
             link={post.node.fields.slug}
             date={post.node.frontmatter.date}
+            image_link={post.node.frontmatter.image}
             isFirstPost={index === 0}
             internal
           />

@@ -21,26 +21,24 @@ const SummaryItem = ({ name, description, link = false, image_link = null, inter
 
   return (
       <article className={wrapperClass}>
-        <div className="mb-3">
-          {date && <time className={classes.date}>{date}</time>}
-          <h3
-            className={`${classes.name} ${
-              link ? 'hover:text-blue-600 transition-colors duration-200' : ''
-            }`}
-          >
-            {link ? linkContent : name}
-          </h3>
-        </div>
-        <div className="flex md:flex-row gap-4 flex-col">
+        <div className="flex flex-row gap-4 my-2">
           <div className="flex-1">
+            {date && <time className={classes.date}>{date}</time>}
+            <h3
+              className={`${classes.name} ${
+                link ? 'hover:text-blue-600 transition-colors duration-200' : ''
+              }`}
+            >
+              {link ? linkContent : name}
+            </h3>
             <p className={classes.description} dangerouslySetInnerHTML={{__html: description}} />
           </div>
           {image_link && (
-            <div className="md:w-40 w-full flex-shrink-0">
+            <div className="w-24 md:w-28 flex-shrink-0 flex items-start justify-center">
               <img 
                 src={image_link} 
                 alt={name} 
-                className="w-full h-24 md:h-28 object-contain rounded-lg shadow-sm" 
+                className="w-24 h-24 md:w-28 md:h-28 mt-4 object-contain rounded-lg shadow-sm hover:scale-110 transition-transform duration-300 ease-in-out" 
               />
             </div>
           )}
