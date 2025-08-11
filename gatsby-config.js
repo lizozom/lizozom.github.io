@@ -247,8 +247,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://lizozom.github.io`,
-        sitemap: `https://lizozom.github.io/sitemap/sitemap-index.xml`,
+        host: `https://lizozom.com`,
+        sitemap: `https://lizozom.com/sitemap-index.xml`,
         policy: [{ userAgent: `*`, allow: `/` }]
       }
     },
