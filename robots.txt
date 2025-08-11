@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://lizozom.com/sitemap-index.xml
-Host: https://lizozom.com
