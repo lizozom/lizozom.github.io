@@ -1,6 +1,7 @@
 ---
 title: "Featured on the Official OpenSearch Blog: Recipes to Vectors Tutorial"
 date: "2025-05-21"
+author: "Liza Katz"
 description: "I'm thrilled to share that my vector search tutorial was featured on the official OpenSearch blog - a significant recognition from the OpenSearch community."
 ---
 I'm absolutely thrilled to share that my tutorial on building hybrid search applications has been [featured on the official OpenSearch blog](https://opensearch.org/blog/recipes-to-vectors-building-a-hybrid-search-app-with-opensearch/)! This is an incredible honor and recognition from the OpenSearch community.

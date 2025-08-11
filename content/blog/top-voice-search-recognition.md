@@ -1,6 +1,7 @@
 ---
 title: "Recognized as a Top Voice in Search Tech by Pulse Support"
 date: "2025-06-15"
+author: "Liza Katz"
 description: "I was honored to be featured in Pulse Support's 'Top Voices in Search Tech' initiative, sharing insights about my journey in search technologies and GenAI."
 ---
 I'm honored to share that I've been recognized as a [Top Voice in Search Tech](https://pulse.support/top-voices/liza-katz) by Pulse Support as part of their carefully curated showcase of influential search technology professionals from around the world.

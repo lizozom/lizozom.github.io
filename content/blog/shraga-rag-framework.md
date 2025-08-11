@@ -1,6 +1,7 @@
 ---
 title: "Introducing Shraga: A Minimal RAG Framework for Production"
 date: "2025-04-16"
+author: "Liza Katz"
 description: "I published an article about Shraga, an open-source RAG framework I created with Big Data Boutique - designed to build production-ready GenAI applications without the bloat."
 ---
 

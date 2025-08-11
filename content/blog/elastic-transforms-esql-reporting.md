@@ -1,6 +1,7 @@
 ---
 title: "New Article: Building Blazing Fast Reports with Elastic Transforms and ES|QL"
 date: "2024-07-22"
+author: "Liza Katz"
 description: "I published an article on Medium demonstrating how to create high-performance reporting infrastructure using Elasticsearch Transforms and the new ES|QL query language."
 ---
 

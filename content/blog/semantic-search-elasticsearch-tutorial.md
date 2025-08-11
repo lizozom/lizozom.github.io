@@ -1,6 +1,7 @@
 ---
 title: "New Tutorial: Building Semantic Search Applications with Elasticsearch"
 date: "2025-03-04"
+author: "Liza Katz"
 description: "I published a comprehensive hands-on tutorial on the Big Data Boutique blog about building hybrid search applications using Elasticsearch as a vector database."
 ---
 

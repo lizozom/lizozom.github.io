@@ -1,6 +1,7 @@
 ---
 title: "Upcoming Webinar: RAG with OpenSearch - A Crash Course for Building RAG Applications"
 date: "2025-07-17"
+author: "Liza Katz"
 description: "Join me on July 30th for a comprehensive workshop on building production-ready RAG applications with OpenSearch, covering everything from data preparation to LLM integration."
 ---
 

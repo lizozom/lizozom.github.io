@@ -1,6 +1,7 @@
 ---
 title: "New Article: Understanding Vector Search in OpenSearch and Elasticsearch"
 date: "2025-02-03"
+author: "Liza Katz"
 description: "I published a foundational article on the Big Data Boutique blog introducing vector search concepts and how they work in OpenSearch and Elasticsearch."
 ---
 I'm pleased to share that I've published a comprehensive introduction to vector search on the [Big Data Boutique blog](https://bigdataboutique.com/blog/opensearch-and-elasticsearch-vector-search-an-introduction-6af584), exploring how this powerful search technology works in OpenSearch and Elasticsearch.

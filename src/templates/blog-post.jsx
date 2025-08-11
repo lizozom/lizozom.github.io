@@ -11,6 +11,8 @@ const classes = {
   wrapper: 'mt-16 blog-content',
   title: 'mt-16 text-4xl text-gray-900 font-bold',
   date: 'text-gray-600 font-light',
+  author: 'text-gray-700 font-medium text-sm',
+  metaWrapper: 'mb-6',
 };
 
 const BlogPost = ({ data, location }) => {
@@ -39,7 +41,7 @@ const BlogPost = ({ data, location }) => {
     "image": `${siteMetadata.siteUrl}/social.jpg`,
     "author": {
       "@type": "Person",
-      "name": siteMetadata.name,
+      "name": post.frontmatter.author || siteMetadata.name,
       "url": siteMetadata.siteUrl
     },
     "publisher": {
@@ -71,9 +73,16 @@ const BlogPost = ({ data, location }) => {
         </script>
       </Helmet>
       <h1 className={classes.title}>{post.frontmatter.title}</h1>
-      <p className={classes.date}>
-        Posted on {moment(post.frontmatter.date).format('MMMM D, YYYY')}
-      </p>
+      <div className={classes.metaWrapper}>
+        <p className={classes.date}>
+          Posted on {moment(post.frontmatter.date).format('MMMM D, YYYY')}
+        </p>
+        {post.frontmatter.author && (
+          <p className={classes.author}>
+            By {post.frontmatter.author}
+          </p>
+        )}
+      </div>
       <div
         className={classes.wrapper}
         dangerouslySetInnerHTML={{ __html: post.html }}
@@ -111,6 +120,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         dateRaw: date
         description
+        author
       }
     }
   }

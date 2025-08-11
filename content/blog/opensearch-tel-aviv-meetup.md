@@ -1,6 +1,7 @@
 ---
 title: "Presented at the First OpenSearch Tel Aviv Meetup: WTF Are Embeddings?"
 date: "2025-05-05"
+author: "Liza Katz"
 description: "I had the pleasure of presenting at the inaugural OpenSearch Tel Aviv meetup, sharing insights about embeddings in a fun and educational talk."
 ---
 

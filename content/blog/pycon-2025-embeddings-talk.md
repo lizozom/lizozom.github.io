@@ -1,6 +1,7 @@
 ---
 title: "Speaking at PyCon Israel 2025: WTF Are Embeddings? A Software Engineer's Take"
 date: "2025-07-18"
+author: "Liza Katz"
 description: "I'm excited to announce that I'll be speaking at PyCon Israel 2025 with a talk that demystifies embeddings for software engineers - no ML PhD required!"
 ---
 

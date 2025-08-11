@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Footer from '../footer';
+
 const classes = {
   wrapper: 'p-8 relative max-w-screen-xl xs:p-24 page-wrapper',
   outerWrapper: 'relative',
@@ -42,6 +44,7 @@ const Layout = ({ children }) => {
         />
       </svg>
       <div className={classes.wrapper}>{children}</div>
+      <Footer />
     </div>
   );
 };

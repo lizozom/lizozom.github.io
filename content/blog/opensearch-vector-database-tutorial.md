@@ -1,6 +1,7 @@
 ---
 title: "New Tutorial: Building Vector Search Applications with OpenSearch"
 date: "2025-04-10"
+author: "Liza Katz"
 description: "I published a comprehensive hands-on tutorial on the Big Data Boutique blog demonstrating how to use OpenSearch as a vector database with real-world recipe data."
 ---
 

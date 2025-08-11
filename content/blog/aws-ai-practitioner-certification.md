@@ -2,6 +2,7 @@
 title: "Certification: AWS Certified AI Practitioner"
 date: "2025-01-29"
 description: ""
+author: "Liza Katz"
 image: "https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png"
 ---
 

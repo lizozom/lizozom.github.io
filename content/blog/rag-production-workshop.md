@@ -1,6 +1,7 @@
 ---
 title: "New Workshop: Introduction to RAG in Production"
 date: "2025-07-16"
+author: "Liza Katz"
 description: "Learn to build and deploy production-ready Retrieval-Augmented Generation (RAG) systems with hands-on guidance from preprocessing to evaluation."
 ---
 
