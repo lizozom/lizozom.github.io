@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://lizozom.github.io/sitemap/sitemap-index.xml
-Host: https://lizozom.github.io
+Sitemap: https://lizozom.com/sitemap-index.xml
+Host: https://lizozom.com
