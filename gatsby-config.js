@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://lizozom.github.io/`,
+    siteUrl: `https://lizozom.com/`,
     // Your Name
     name: 'Liza Katz',
     // Main Site Title
@@ -247,7 +247,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://lizozom.com`,
         sitemap: `https://lizozom.com/sitemap-index.xml`,
         policy: [{ userAgent: `*`, allow: `/` }]
       }
