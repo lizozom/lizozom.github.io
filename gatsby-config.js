@@ -245,13 +245,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        sitemap: `https://lizozom.com/sitemap-index.xml`,
-        policy: [{ userAgent: `*`, allow: `/` }]
-      }
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

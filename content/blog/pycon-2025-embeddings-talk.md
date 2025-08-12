@@ -5,7 +5,7 @@ author: "Liza Katz"
 description: "I'm excited to announce that I'll be speaking at PyCon Israel 2025 with a talk that demystifies embeddings for software engineers - no ML PhD required!"
 ---
 
-I'm thrilled to announce that I'll be speaking at **PyCon Israel 2025** this September! My talk, titled **"WTF Are Embeddings? A software engineer's take"**, is scheduled for September 9th at 15:30 in Hall 7.
+I'm thrilled to announce that I'll be speaking at [**PyCon Israel 2025**](https://python.org.il/) this September! My talk, titled **"WTF Are Embeddings? A software engineer's take"**, is scheduled for September 9th at 15:30 in Hall 7.
 
 ## The Talk: WTF Are Embeddings?
 
@@ -22,19 +22,6 @@ That's exactly what my talk aims to fix.
 - **Practical Python implementations** using everyday tools you already know
 - **When and why to use embeddings** in your own projects
 - **Common pitfalls and how to avoid them**
-
-### A Software Engineer's Perspective
-
-As someone with 20+ years of experience writing code and leading teams, I bring a distinctly practical perspective to this topic. I'm not a data science PhD - I'm a regular software engineer who's learned to build clever AI tools using Python, search technologies, and large language models.
-
-## Why This Talk Matters
-
-The AI revolution is happening now, and embeddings are at its core. Yet too many excellent developers feel left out because the existing explanations are either too academic or too simplified. My goal is to bridge that gap with:
-
-- **Real examples** you can relate to
-- **Bad charts** that actually help explain complex concepts
-- **Humor** to make the learning process enjoyable
-- **Practical takeaways** you can use immediately
 
 ## See You There!
 
