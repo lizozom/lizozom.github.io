@@ -3,7 +3,7 @@ import React from 'react';
 
 const classes = {
   wrapper: 'mb-8 pb-6 border-b border-gray-100 last:border-b-0',
-  wrapperFirst: 'mb-8 pb-6 border-b border-gray-100 last:border-b-0 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-100 shadow-sm',
+  wrapperFirst: 'mb-8 pb-6 border-b border-gray-100 last:border-b-0 bg-gradient-to-r from-purple-50 to-violet-50 p-6 rounded-lg border border-purple-100 shadow-sm',
   name: 'text-xl font-semibold text-gray-900 leading-tight mb-2 item-link',
   description: 'text-gray-700 leading-relaxed',
   date: 'text-sm text-gray-500 font-medium mb-3',
@@ -26,7 +26,7 @@ const SummaryItem = ({ name, description, link = false, image_link = null, inter
             {date && <time className={classes.date}>{date}</time>}
             <h3
               className={`${classes.name} ${
-                link ? 'hover:text-blue-600 transition-colors duration-200' : ''
+                link ? 'hover:text-primary-500 transition-colors duration-200' : ''
               }`}
             >
               {link ? linkContent : name}

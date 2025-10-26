@@ -2,21 +2,16 @@ import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 
-import Header from '../components/header';
+import Hero from '../components/hero';
 import Layout from '../components/layout';
-import SectionAbout from '../components/section-about';
 import SectionBlog from '../components/section-blog';
-import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
-import SectionSkills from '../components/section-skills';
+import SectionSpeaking from '../components/section-speaking';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
-  const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
   const posts = data.allMarkdownRemark.edges;
-  const experience = get(data, 'site.siteMetadata.experience', false);
-  const skills = get(data, 'site.siteMetadata.skills', false);
   const noBlog = !posts || !posts.length;
 
   const seoKeywords = [
@@ -52,14 +47,12 @@ const Index = ({ data }) => {
         description="Liza Katz - Seasoned Full-Stack Developer & GenAI Consultant specializing in RAG, AI Agents, LLMs, and Search Optimization. Ex-Elastic engineer with Webby Award and Google AI Hackathon wins."
         keywords={seoKeywords}
       />
-      <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
-      {about && <SectionAbout about={about} />}
-      {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
-      {experience && experience.length && (
-        <SectionExperience experience={experience} />
-      )}
-      {skills && skills.length && <SectionSkills skills={skills} />}
+      <Hero metadata={data.site.siteMetadata} />
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+        <SectionSpeaking />
+        {projects && projects.length && <SectionProjects projects={projects} />}
+        {!noBlog && <SectionBlog posts={posts} />}
+      </div>
     </Layout>
   );
 };

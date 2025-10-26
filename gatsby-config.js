@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz | Full-Stack Developer & GenAI Consultant | RAG, LLMs, AI Agents`,
     // Description that goes under your name in main bio
-    description: `Seasoned Full-Stack Developer & GenAI Consultant | Ex-Elastic | RAG, Agents, LLMs, Search Optimization`,
+    description: `GenAI | Big Data | Public Speaking | Workshops | Ex-Elastic | RAG, Agents, LLMs, Search Optimization`,
     // Optional: Twitter account handle
     author: null,
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',
@@ -72,10 +72,11 @@ module.exports = {
         description:
           'Developed analytics strategy and Elasticsearch integration for order fulfillment platform. Built customer dashboards for inventory management and order analytics.',
         link: 'https://mygoods.io/',
-        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9A-bQa7BGhsCLCMAuoO1OgL3uqsfcdjHJg&s"
+        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q4dWU_TLV0PxhS10PVL8VKHQ2kDLyjJDeA&s"
       },
       {
         name: 'Outburn LTD Automation and OpenSource infrastructure',
+        image_link: "https://outburn.health/wp-content/uploads/2022/01/outburn-logo-white-medium.png",
         description:
           'Prepared FHIR-based healthcare API codebase for open source contributions. Built automation pipeline with GitHub Actions, TypeScript implementation, and contribution documentation.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
@@ -88,6 +89,7 @@ module.exports = {
       // },
       {
         name: 'ncnn WebAssembly YOLOV5',
+        image_link: "https://avatars.githubusercontent.com/u/26833451?s=200&v=4",
         description:
           'Open source contribution enabling YOLOV5 inference directly in browsers via WebAssembly.',
         link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',

@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import BlogPosts from '../components/blog-posts';
-import Header from '../components/header';
+import CVHeader from '../components/cv-header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -30,7 +30,7 @@ const Index = ({ data }) => {
           'Software Development'
         ]}
       />
-      <Header metadata={data.site.siteMetadata} />
+      <CVHeader metadata={data.site.siteMetadata} />
       {noBlog ? (
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold mb-4">Blog</h1>
