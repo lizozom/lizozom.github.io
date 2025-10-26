@@ -4,6 +4,7 @@ import profileImg from '../../images/liza-katz-profile.jpg';
 const classes = {
   wrapper: 'relative min-h-screen w-full overflow-hidden',
   canvas: 'absolute inset-0 w-full h-full',
+  emojiContainer: 'absolute inset-0 w-full h-full pointer-events-none',
   content: 'relative z-10 min-h-screen flex flex-col',
   nav: 'w-full flex justify-center gap-8 md:gap-12 pt-8 pb-4 px-4',
   navLink: 'font-sans text-white/60 hover:text-white transition-all duration-300 text-xs md:text-sm uppercase tracking-[0.2em] font-medium cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full',
@@ -56,20 +57,6 @@ const Hero = ({ metadata }) => {
     // Particle system for subtle animation
     const particles = [];
     const particleCount = 50;
-
-    // Floating emojis
-    const emojis = ['🍌', '🐋', '🐱', '🔥', '🐘', '💻'];
-    const floatingEmojis = emojis.map((emoji, index) => ({
-      emoji,
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      speedX: parseFloat(((Math.random() - 0.5) * 0.2).toFixed(2)),
-      speedY: parseFloat(((Math.random() - 0.5) * 0.2).toFixed(2)),
-      rotation: Math.random() * Math.PI * 2,
-      rotationSpeed: parseFloat(((Math.random() - 0.5) * 0.01).toFixed(2)),
-      size: 30 + Math.random() * 20,
-      opacity: 0.4 + Math.random() * 0.15,
-    }));
 
     class Particle {
       constructor() {
@@ -141,32 +128,6 @@ const Hero = ({ metadata }) => {
         });
       });
 
-      // Update and draw floating emojis
-      floatingEmojis.forEach((item) => {
-        // Update position
-        item.x += item.speedX;
-        item.y += item.speedY;
-        item.rotation += item.rotationSpeed;
-
-        // Smooth boundary wrapping (no bounce, wrap around)
-        const margin = 100;
-        if (item.x < -margin) item.x = canvas.width + margin;
-        if (item.x > canvas.width + margin) item.x = -margin;
-        if (item.y < -margin) item.y = canvas.height + margin;
-        if (item.y > canvas.height + margin) item.y = -margin;
-
-        // Draw emoji
-        ctx.save();
-        ctx.globalAlpha = item.opacity;
-        ctx.translate(item.x, item.y);
-        ctx.rotate(item.rotation);
-        ctx.font = `${item.size}px Arial`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(item.emoji, 0, 0);
-        ctx.restore();
-      });
-
       requestAnimationFrame(animate);
     }
 
@@ -207,9 +168,74 @@ const Hero = ({ metadata }) => {
     }
   };
 
+  // Floating emojis data
+  const emojis = [
+    { icon: '🍌', left: '10%', top: '15%', duration: 25, delay: 0, size: 1.5 },
+    { icon: '🐋', left: '85%', top: '20%', duration: 30, delay: 2, size: 1.8 },
+    { icon: '🐱', left: '20%', top: '70%', duration: 28, delay: 4, size: 1.3 },
+    { icon: '🔥', left: '75%', top: '65%', duration: 26, delay: 1, size: 1.6 },
+    { icon: '🐘', left: '50%', top: '85%', duration: 32, delay: 3, size: 1.9 },
+    { icon: '💻', left: '15%', top: '45%', duration: 27, delay: 5, size: 1.5 },
+  ];
+
   return (
     <div className={classes.wrapper}>
       <canvas ref={canvasRef} className={classes.canvas} />
+      
+      {/* CSS-animated floating emojis */}
+      <div className={classes.emojiContainer}>
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes float {
+            0% { 
+              transform: translate(0, 0) rotate(0deg); 
+              opacity: 0.2;
+            }
+            25% { 
+              transform: translate(20px, -30px) rotate(8deg); 
+              opacity: 0.2;
+            }
+            50% { 
+              transform: translate(-15px, -60px) rotate(-8deg); 
+              opacity: 0.2;
+            }
+            75% { 
+              transform: translate(-25px, -30px) rotate(5deg); 
+              opacity: 0.2;
+            }
+            100% { 
+              transform: translate(0, 0) rotate(0deg); 
+              opacity: 0.2;
+            }
+          }
+          
+          .floating-emoji {
+            position: absolute;
+            display: inline-block;
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            transform: translateZ(0);
+            animation: float linear infinite;
+            opacity: 0.2;
+          }
+        `}} />
+        {emojis.map((emoji, index) => (
+          <span
+            key={index}
+            className="floating-emoji"
+            style={{
+              left: emoji.left,
+              top: emoji.top,
+              fontSize: `${emoji.size}rem`,
+              animationDuration: `${emoji.duration}s`,
+              animationDelay: `${emoji.delay}s`,
+            }}
+          >
+            {emoji.icon}
+          </span>
+        ))}
+      </div>
+      
       <div className={classes.content}>
         {/* Navigation at top */}
         <nav className={classes.nav}>
