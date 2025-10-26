@@ -11,7 +11,6 @@ const SectionProjects = ({ projects }) => {
       title="Projects" 
       extraClass="hide-in-print" 
       id="projects"
-      background="bg-gradient-to-br from-accent-50/20 via-white to-primary-50/30"
     >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {projects.map((project, index) => (

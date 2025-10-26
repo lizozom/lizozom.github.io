@@ -69,9 +69,9 @@ const CVHeader = ({ metadata }) => {
 
     // Gradient background - matching the hero
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, '#667eea'); // Bright purple
-    gradient.addColorStop(0.5, '#764ba2'); // Deep purple
-    gradient.addColorStop(1, '#5b3a8f'); // Dark space purple
+    gradient.addColorStop(0, '#1e3a8a'); // Deep space blue
+    gradient.addColorStop(0.5, '#312e81'); // Dark midnight
+    gradient.addColorStop(1, '#1e1b4b'); // Almost black space
 
     function animate() {
       // Clear and draw gradient background

@@ -7,7 +7,8 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz | Full-Stack Developer & GenAI Consultant | RAG, LLMs, AI Agents`,
     // Description that goes under your name in main bio
-    description: `GenAI | Big Data | Public Speaking | Workshops | Ex-Elastic | RAG, Agents, LLMs, Search Optimization`,
+    description: `Helping teams and audiences make AI make sense.`,
+    subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Optional: Twitter account handle
     author: null,
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',

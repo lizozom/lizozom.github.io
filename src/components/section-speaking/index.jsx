@@ -17,7 +17,6 @@ const SectionSpeaking = () => {
     <Section 
       title="Public Speaking & Workshops" 
       id="speaking"
-      background="bg-gradient-to-br from-primary-50/30 via-white to-accent-50/20"
     >
       <div className={classes.grid}>
         <div className={classes.card}>

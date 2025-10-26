@@ -40,16 +40,9 @@ const CVPage = ({ data }) => {
       />
       <CVHeader metadata={siteMetadata} />
       
-      <div className={classes.wrapper}>
-        <h1 className={classes.title}>Professional Experience</h1>
-        <p className={classes.subtitle}>
-          A comprehensive overview of my career journey
-        </p>
-        
         {experience && experience.length && (
           <SectionExperience experience={experience} />
         )}
-      </div>
     </Layout>
   );
 };

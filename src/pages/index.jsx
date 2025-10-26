@@ -66,6 +66,7 @@ export const pageQuery = graphql`
         name
         title
         description
+        subtitle
         about
         author
         github

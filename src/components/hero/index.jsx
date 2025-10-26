@@ -17,7 +17,8 @@ const classes = {
   socials: 'flex gap-5',
   socialLink: 'w-14 h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 backdrop-blur-md transition-all duration-300 text-white hover:scale-110 border border-white/20',
   name: 'font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-4',
-  subtitle: 'font-sans text-base md:text-lg lg:text-xl text-white/90 leading-relaxed font-normal tracking-wide',
+  description: 'font-sans text-base md:text-lg lg:text-xl text-white/90 leading-relaxed font-normal tracking-wide',
+  subtitle: 'font-sans italic text-base md:text-m lg:text-l text-white/90 leading-relaxed font-normal tracking-wide mt-1',
   ctaWrapper: 'flex flex-col sm:flex-row gap-4 mt-2',
   cta: 'font-sans inline-flex items-center justify-center gap-3 bg-white text-primary-500 px-9 py-3.5 rounded-full font-semibold text-base tracking-wide hover:bg-white/95 transition-all duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.3)] hover:shadow-[0_15px_50px_rgba(255,255,255,0.4)] hover:scale-105 hover:-translate-y-1',
 };
@@ -107,9 +108,9 @@ const Hero = ({ metadata }) => {
 
     // Gradient background - Deep space purple
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, '#667eea'); // Bright purple
-    gradient.addColorStop(0.5, '#764ba2'); // Deep purple
-    gradient.addColorStop(1, '#5b3a8f'); // Dark space purple
+    gradient.addColorStop(0, '#1e3a8a'); // Deep space blue
+    gradient.addColorStop(0.5, '#312e81'); // Dark midnight
+    gradient.addColorStop(1, '#1e1b4b'); // Almost black space
 
     function animate() {
       // Clear and draw gradient background
@@ -308,7 +309,10 @@ const Hero = ({ metadata }) => {
               <div className={classes.rightColumn}>
                 <div>
                   <h1 className={classes.name}>{metadata.name}</h1>
-                  <p className={classes.subtitle}>{metadata.description}</p>
+                  <p className={classes.description}>{metadata.description}</p>
+                  {metadata.subtitle && (
+                    <p className={classes.subtitle}>{metadata.subtitle}</p>
+                  )}
                 </div>
                 <div className={classes.ctaWrapper}>
                   <a
