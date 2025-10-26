@@ -62,10 +62,11 @@ const BlogPost = ({ data, location }) => {
     <Layout>
       <Header metadata={siteMetadata} />
       <SEO 
-        title={post.frontmatter.title}
+        title={`${post.frontmatter.title} by ${post.frontmatter.author || siteMetadata.name}`}
         description={post.frontmatter.description || post.excerpt}
         keywords={keywords}
         canonical={blogPostUrl}
+        disableSiteTitleAppend
       />
       <Helmet>
         <script type="application/ld+json">

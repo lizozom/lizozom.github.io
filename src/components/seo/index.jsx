@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const SEO = ({ description, lang, meta, title, keywords, image, canonical }) => {
+const SEO = ({ description, lang, meta, title, keywords, image, canonical, disableSiteTitleAppend }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -22,7 +22,9 @@ const SEO = ({ description, lang, meta, title, keywords, image, canonical }) => 
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
-  const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
+  const finalTitle = title
+    ? (disableSiteTitleAppend ? title : `${title} | ${defaultTitle}`)
+    : defaultTitle;
   const siteUrl = site.siteMetadata.siteUrl;
   const defaultImage = `${siteUrl}/social.jpg`;
   const metaImage = image || defaultImage;
@@ -118,6 +120,7 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   keywords: [],
+  disableSiteTitleAppend: false,
 };
 
 SEO.propTypes = {
@@ -128,6 +131,7 @@ SEO.propTypes = {
   keywords: PropTypes.arrayOf(PropTypes.string),
   image: PropTypes.string,
   canonical: PropTypes.string,
+  disableSiteTitleAppend: PropTypes.bool,
 };
 
 export default SEO;

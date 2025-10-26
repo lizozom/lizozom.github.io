@@ -18,11 +18,14 @@ const classes = {
 const AboutPage = ({ data }) => {
   const siteMetadata = data?.site?.siteMetadata || {};
 
+  const siteUrl = siteMetadata?.siteUrl;
   return (
     <Layout>
       <SEO 
         title="About Liza Katz" 
         description="Learn more about Liza Katz - AI/ML engineer, speaker, and workshop instructor specializing in search, embeddings, and RAG systems."
+        canonical={`${siteUrl}/about-liza-katz/`}
+        keywords={['Liza Katz','About','AI Engineer','GenAI','RAG','Search','Speaker','Workshop Instructor']}
       />
       <Header metadata={siteMetadata} />
       
@@ -64,6 +67,7 @@ export const pageQuery = graphql`
         github
         stackoverflow
         linkedin
+  siteUrl
       }
     }
   }

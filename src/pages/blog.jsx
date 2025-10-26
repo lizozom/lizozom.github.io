@@ -10,9 +10,26 @@ const Index = ({ data }) => {
   const posts = data?.allMarkdownRemark?.edges || [];
   const noBlog = !posts || !posts.length;
 
+  const rawSiteUrl = data?.site?.siteMetadata?.siteUrl || '';
+  const siteUrl = rawSiteUrl.replace(/\/$/, '');
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO 
+        title="Blog" 
+        description="Articles and technical posts by Liza Katz on Generative AI, RAG, search engineering, and practical software development."
+  canonical={`${siteUrl}/blog/`}
+        keywords={[
+          'Liza Katz',
+          'Blog',
+          'GenAI',
+          'RAG',
+          'Search',
+          'Elasticsearch',
+          'OpenSearch',
+          'AI Engineering',
+          'Software Development'
+        ]}
+      />
       <Header metadata={data.site.siteMetadata} />
       {noBlog ? (
         <div className="container mx-auto px-4 py-8">
@@ -39,7 +56,8 @@ export const pageQuery = graphql`
         author
         github
         stackoverflow
-        linkedin
+  linkedin
+  siteUrl
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
