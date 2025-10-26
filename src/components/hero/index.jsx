@@ -342,7 +342,9 @@ const Hero = ({ metadata }) => {
                 </div>
                 <div className={classes.ctaWrapper}>
                   <a
-                    href="mailto:liza.katz@gmail.com?subject=Let's Work Together"
+                    href="https://www.linkedin.com/in/lizak/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={classes.cta}
                   >
                     <span>Let's Work Together</span>
