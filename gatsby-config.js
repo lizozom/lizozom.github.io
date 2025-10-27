@@ -5,12 +5,13 @@ module.exports = {
     // Your Name
     name: 'Liza Katz',
     // Main Site Title
-    title: `Liza Katz | Full-Stack Developer & GenAI Consultant | RAG, LLMs, AI Agents`,
+    title: `Liza Katz | Make AI Make Sense | Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Description that goes under your name in main bio
     description: `Helping teams and audiences make AI make sense.`,
     subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Optional: Twitter account handle
     author: null,
+    image: 'https://lizozom.com/og.png',
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',
     // Optional: Github account URL
     github: `https://github.com/lizozom`,

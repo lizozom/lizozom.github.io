@@ -44,8 +44,9 @@ const Index = ({ data }) => {
     <Layout>
       <SEO 
         title="Home"
-        description="Liza Katz - Seasoned Full-Stack Developer & GenAI Consultant specializing in RAG, AI Agents, LLMs, and Search Optimization. Ex-Elastic engineer with Webby Award and Google AI Hackathon wins."
+        description="Liza Katz - Make AI Make Sense | Public speaking, workshops and hands-on Big Data & GenAI consulting."
         keywords={seoKeywords}
+        image={data.site.siteMetadata.image}
       />
       <Hero metadata={data.site.siteMetadata} />
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
@@ -67,6 +68,7 @@ export const pageQuery = graphql`
         title
         description
         subtitle
+        image
         about
         author
         github

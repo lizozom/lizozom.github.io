@@ -10,6 +10,17 @@
     scroll-padding-top: 2rem;
   }
 
+  /* Mobile viewport height fix for address bar and navigation */
+  html {
+    --vh: 1vh;
+  }
+  
+  @supports (height: 100dvh) {
+    html {
+      --vh: 1dvh;
+    }
+  }
+
   b {
     font-weight: 500;
   }
@@ -103,6 +114,17 @@
     .top-5 {
       top: 5%;
     }
+  }
+
+  /* Mobile-friendly viewport height classes */
+  .min-h-screen-mobile {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .h-screen-mobile {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 

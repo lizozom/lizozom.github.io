@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import profileImg from '../../images/liza-katz-profile.jpg';
 import Navigation from '../navigation';
+import useMobileViewport from '../../hooks/useMobileViewport';
 
 const classes = {
   wrapper: 'relative w-full overflow-hidden',
@@ -19,6 +20,9 @@ const classes = {
 
 const CVHeader = ({ metadata }) => {
   const canvasRef = useRef(null);
+  
+  // Initialize mobile viewport handling
+  useMobileViewport();
 
   useEffect(() => {
     const canvas = canvasRef.current;

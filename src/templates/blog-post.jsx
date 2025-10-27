@@ -41,7 +41,7 @@ const BlogPost = ({ data, location }) => {
     "@type": "BlogPosting",
     "headline": post.frontmatter.title,
     "description": post.frontmatter.description || post.excerpt,
-    "image": `${siteMetadata.siteUrl}/social.jpg`,
+    "image": `${siteMetadata.siteUrl}/og.png`,
     "author": {
       "@type": "Person",
       "name": post.frontmatter.author || siteMetadata.name,
@@ -113,6 +113,7 @@ export const pageQuery = graphql`
         name
         title
         description
+        image
         about
         author
         github

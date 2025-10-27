@@ -12,6 +12,7 @@ const SEO = ({ description, lang, meta, title, keywords, image, canonical, disab
             title
             description
             author
+            image
             siteUrl
             name
           }
@@ -26,7 +27,7 @@ const SEO = ({ description, lang, meta, title, keywords, image, canonical, disab
     ? (disableSiteTitleAppend ? title : `${title} | ${defaultTitle}`)
     : defaultTitle;
   const siteUrl = site.siteMetadata.siteUrl;
-  const defaultImage = `${siteUrl}/social.jpg`;
+  const defaultImage = `${siteUrl}/og.png`;
   const metaImage = image || defaultImage;
   const canonicalUrl = canonical || siteUrl;
 

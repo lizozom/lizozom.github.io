@@ -1,20 +1,21 @@
 import React, { useEffect, useRef } from 'react';
 import profileImg from '../../images/liza-katz-profile.jpg';
 import Navigation from '../navigation';
+import useMobileViewport from '../../hooks/useMobileViewport';
 
 const classes = {
-  wrapper: 'relative min-h-screen w-full overflow-hidden',
+  wrapper: 'relative min-h-screen-mobile w-full overflow-hidden',
   canvas: 'absolute inset-0 w-full h-full',
   emojiContainer: 'absolute inset-0 w-full h-full pointer-events-none',
-  content: 'relative z-10 min-h-screen flex flex-col',
+  content: 'relative z-10 min-h-screen-mobile flex flex-col',
   navWrapper: 'w-full flex justify-center pt-8 pb-4 px-4',
   mainContent: 'flex-1 flex items-center justify-center px-6 md:px-12 lg:px-20 py-16 md:py-20',
   container: 'max-w-7xl w-full mx-auto',
-  grid: 'grid md:grid-cols-[400px_1fr] lg:grid-cols-[450px_1fr] gap-16 lg:gap-24 items-center',
+  grid: 'grid md:grid-cols-[400px_1fr] lg:grid-cols-[450px_1fr] gap-8 lg:gap-24 items-center',
   leftColumn: 'flex flex-col items-center justify-center space-y-8',
   rightColumn: 'flex flex-col justify-center space-y-6 max-w-2xl',
   imageWrapper: 'relative',
-  image: 'w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-[6px] border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.3)] transform transition-all duration-500 hover:scale-105 hover:border-white/30',
+  image: 'w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-[6px] border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.3)] transform transition-all duration-500 hover:scale-105 hover:border-white/30',
   socials: 'flex gap-5',
   socialLink: 'w-14 h-14 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 backdrop-blur-md transition-all duration-300 text-white hover:scale-110 border border-white/20',
   name: 'font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-4',
@@ -46,6 +47,9 @@ const StackOverflowIcon = () => (
 
 const Hero = ({ metadata }) => {
   const canvasRef = useRef(null);
+  
+  // Initialize mobile viewport handling
+  useMobileViewport();
 
   useEffect(() => {
     const canvas = canvasRef.current;
