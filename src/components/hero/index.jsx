@@ -22,6 +22,7 @@ const classes = {
   subtitle: 'font-sans italic text-base md:text-m lg:text-l text-white/90 leading-relaxed font-normal tracking-wide mt-1',
   ctaWrapper: 'flex flex-col sm:flex-row gap-4 mt-2',
   cta: 'font-sans inline-flex items-center justify-center gap-3 bg-white text-primary-500 px-9 py-3.5 rounded-full font-semibold text-base tracking-wide hover:bg-white/95 transition-all duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.3)] hover:shadow-[0_15px_50px_rgba(255,255,255,0.4)] hover:scale-105 hover:-translate-y-1',
+  artCredit: 'fixed bottom-6 right-6 z-20 text-right text-white/40 text-xs italic font-serif leading-tight',
 };
 
 // Social media SVG icons
@@ -148,11 +149,11 @@ const Hero = ({ metadata }) => {
   // Floating emojis data
   const emojis = [
     { icon: '🍌', left: '10%', top: '15%', duration: 25, delay: 0, size: 1.5 },
-    { icon: '🐋', left: '85%', top: '20%', duration: 30, delay: 2, size: 1.8 },
-    { icon: '🐱', left: '20%', top: '70%', duration: 28, delay: 4, size: 1.3 },
+    { icon: '🐋', left: '85%', top: '10%', duration: 30, delay: 2, size: 1.8 },
+    { icon: '🐱', left: '20%', top: '90%', duration: 28, delay: 4, size: 1.3 },
     { icon: '🔥', left: '75%', top: '65%', duration: 26, delay: 1, size: 1.6 },
     { icon: '🐘', left: '50%', top: '85%', duration: 32, delay: 3, size: 1.9 },
-    { icon: '💻', left: '15%', top: '45%', duration: 27, delay: 5, size: 1.5 },
+    { icon: '💻', left: '45%', top: '25%', duration: 27, delay: 5, size: 1.5 },
   ];
 
   return (
@@ -296,6 +297,12 @@ const Hero = ({ metadata }) => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Art Credit */}
+      <div className={classes.artCredit}>
+        <div>Lost in Embedding Space,</div>
+        <div>by Liza K. & Claude S.</div>
       </div>
     </div>
   );
