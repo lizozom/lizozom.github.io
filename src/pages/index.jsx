@@ -73,6 +73,7 @@ export const pageQuery = graphql`
         stackoverflow
         linkedin
         projects {
+          id
           name
           description
           link

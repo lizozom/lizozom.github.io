@@ -27,28 +27,31 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Human or Not (AI21)',
+        id: 'ai21',
+        name: 'Human or Not [AI21]',
         description:
           '<b>**<a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award Winner!</a>**</b> A Social Turing Game. Chat with someone for two minutes, and try to figure out if it was a fellow human or an AI bot. Think you can tell the difference?',
         link: 'https://humanornot.ai/',
         image_link: "https://assets.recogmedia.net/1/139/Entry_Uploads/288120-thumb.jpg",
       },
       {
-        name: 'Scout AI Agent (Max Security)',
+        id: 'max',
+        name: 'Scout AI Agent',
         description:
           'Built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. Integrates multiple geopolitical datasets for proactive threat mitigation. AWS, OpenSearch, Claude.',
         link: 'https://www.max-security.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
       },
       {
-        name: 'Data Analytics Pipelines and RAG Architecture (Cover)',
+        id: 'cover',
+        name: 'AI Powered Data Analytics',
         description:
           'Designed data analytics pipelines and RAG architecture for an insurance AI agent. OpenSearch, OpenAI, n8n.',
         link: 'https://www.cover.co.il/',
         image_link: "https://www.cover.co.il/wp-content/uploads/2025/03/cover-blue-logo.png"
       },
       {
-        name: 'Hybrid Search for customer support (ScreenSteps)',
+        name: 'Hybrid Search optimization',
         description:
           'Developed hybrid search combining keyword and semantic search for knowledge base platform. Improved customer article discovery and support efficiency. Elasticsearch, AWS Bedrock.',
         link: 'https://www.screensteps.com/',
@@ -62,21 +65,23 @@ module.exports = {
         image_link: "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/874/400/datas/medium.png"
       },
       {
-        name: 'MoMa AI Assistant (Nayax)',
+        name: 'MoMa AI Assistant',
         description:
           'Built ReAct AI assistant for vending machine operators, improving maintenance and customer service. Custom OpenAI deployment on Azure with <b>prompt engineering, automation, evaluation and monitoring</b>.',
         link: 'https://www.nayax.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn5BlEfjbCB1kGKNSCyeHwxyLn7tfg3Suxw&s"
       },
       {
-        name: 'Goods.io - Elasticsearch integration and analytics',
+        id: 'goods',
+        name: 'Elasticsearch integration and analytics',
         description:
           'Developed analytics strategy and Elasticsearch integration for order fulfillment platform. Built customer dashboards for inventory management and order analytics.',
         link: 'https://mygoods.io/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q4dWU_TLV0PxhS10PVL8VKHQ2kDLyjJDeA&s"
       },
       {
-        name: 'Outburn LTD Automation and OpenSource infrastructure',
+        id: 'outburn',
+        name: 'Automation and OpenSource infra',
         image_link: "https://outburn.health/wp-content/uploads/2022/01/outburn-logo-white-medium.png",
         description:
           'Prepared FHIR-based healthcare API codebase for open source contributions. Built automation pipeline with GitHub Actions, TypeScript implementation, and contribution documentation.',
@@ -134,7 +139,7 @@ module.exports = {
         link: 'https://elastic.co',
       },
       {
-        name: 'ironSource (Unity)',        
+        name: 'ironSource [Unity]',        
         description: '<b>Full-Stack Developer, Team Lead, May 2013 - April 2018</b><br/>Developed the MobileCore SDK, a cross-platform SDK for mobile developers to monetize their apps. I was responsible for the SDK\'s architecture, design, and implementation. I then led a team of developers and QA engineers, to develop a mobile video advertising solution, supporting cutting edge ad formats, advertising standards and targeting options. A lot of my work was focused on ad serving business logic, which led to optimizations, <b>cutting upto 70% of data and traffic costs</b>.',
         link: 'https://www.is.com/',
       },

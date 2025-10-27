@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import profileImg from '../../images/liza-katz-profile.jpg';
+import Navigation from '../navigation';
 
 const classes = {
   wrapper: 'relative w-full overflow-hidden',
   canvas: 'absolute inset-0 w-full h-full',
   content: 'relative z-10 flex flex-col',
-  nav: 'w-full flex justify-center gap-8 md:gap-12 pt-8 pb-4 px-4',
-  navLink: 'font-sans text-white/60 hover:text-white transition-all duration-300 text-xs md:text-sm uppercase tracking-[0.2em] font-medium cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full',
+  navWrapper: 'w-full flex justify-center pt-8 pb-4 px-4',
   heroSection: 'w-full flex justify-center px-4 sm:px-6 lg:px-8 py-8 md:py-10',
   container: 'flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 max-w-4xl',
   imageWrapper: 'flex-shrink-0',
@@ -123,24 +123,8 @@ const CVHeader = ({ metadata }) => {
     <div className={classes.wrapper}>
       <canvas ref={canvasRef} className={classes.canvas} />
       <div className={classes.content}>
-        {/* Navigation at top */}
-        <nav className={classes.nav}>
-          <Link to="/" className={classes.navLink}>
-            Home
-          </Link>
-          <Link to="/#speaking" className={classes.navLink}>
-            Speaking
-          </Link>
-          <Link to="/#projects" className={classes.navLink}>
-            Projects
-          </Link>
-          <Link to="/#posts" className={classes.navLink}>
-            Posts
-          </Link>
-          <Link to="/liza-katz-cv" className={classes.navLink}>
-            Experience
-          </Link>
-        </nav>
+        {/* Navigation */}
+        <Navigation variant="cvHeader" />
 
         {/* Compressed hero content */}
         <div className={classes.heroSection}>

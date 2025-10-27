@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import profileImg from '../../images/liza-katz-profile.jpg';
+import Navigation from '../navigation';
 
 const classes = {
   wrapper: 'relative min-h-screen w-full overflow-hidden',
   canvas: 'absolute inset-0 w-full h-full',
   emojiContainer: 'absolute inset-0 w-full h-full pointer-events-none',
   content: 'relative z-10 min-h-screen flex flex-col',
-  nav: 'w-full flex justify-center gap-8 md:gap-12 pt-8 pb-4 px-4',
-  navLink: 'font-sans text-white/60 hover:text-white transition-all duration-300 text-xs md:text-sm uppercase tracking-[0.2em] font-medium cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 hover:after:w-full',
+  navWrapper: 'w-full flex justify-center pt-8 pb-4 px-4',
   mainContent: 'flex-1 flex items-center justify-center px-6 md:px-12 lg:px-20 py-16 md:py-20',
   container: 'max-w-7xl w-full mx-auto',
   grid: 'grid md:grid-cols-[400px_1fr] lg:grid-cols-[450px_1fr] gap-16 lg:gap-24 items-center',
@@ -145,29 +145,6 @@ const Hero = ({ metadata }) => {
     };
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      // Use both methods for better browser compatibility
-      try {
-        element.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start',
-          inline: 'nearest'
-        });
-      } catch (error) {
-        // Fallback for older browsers
-        const offset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - offset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    }
-  };
-
   // Floating emojis data
   const emojis = [
     { icon: '🍌', left: '10%', top: '15%', duration: 25, delay: 0, size: 1.5 },
@@ -236,51 +213,13 @@ const Hero = ({ metadata }) => {
         ))}
       </div>
       
+      <Navigation variant="hero" />
+      
       <div className={classes.content}>
-        {/* Navigation at top */}
-        <nav className={classes.nav}>
-          <span
-            className={classes.navLink}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => e.key === 'Enter' && scrollToSection('home')}
-          >
-            Home
-          </span>
-          <span
-            className={classes.navLink}
-            onClick={() => scrollToSection('speaking')}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => e.key === 'Enter' && scrollToSection('speaking')}
-          >
-            Speaking
-          </span>
-          <span
-            className={classes.navLink}
-            onClick={() => scrollToSection('projects')}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => e.key === 'Enter' && scrollToSection('projects')}
-          >
-            Projects
-          </span>
-          <span
-            className={classes.navLink}
-            onClick={() => scrollToSection('posts')}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => e.key === 'Enter' && scrollToSection('posts')}
-          >
-            Posts
-          </span>
-          <a
-            href="/liza-katz-cv"
-            className={classes.navLink}
-          >
-            Experience
-          </a>
-        </nav>
+        {/* Navigation wrapper */}
+        <div className={classes.navWrapper}>
+          {/* Navigation component handles both mobile and desktop */}
+        </div>
 
         {/* Main hero content */}
         <div className={classes.mainContent}>

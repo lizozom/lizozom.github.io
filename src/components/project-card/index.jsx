@@ -13,15 +13,14 @@ const classes = {
   arrow: 'w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200',
 };
 
-const ProjectCard = ({ name, description, link, image_link, featured = false }) => {
+const ProjectCard = ({ id, name, description, link, image_link, featured = false }) => {
   // Extract if it's a Webby or Hackathon winner
   const isWinner = description.includes('Winner') || description.includes('Award');
   
   // Custom background colors for specific projects
   const getBackgroundColor = () => {
-    const projectName = name.toLowerCase();
-    if (projectName.includes('human or not')) return 'bg-black';
-    if (projectName.includes('scout')) return 'bg-black';
+    const projectName = id ? id.toLowerCase() : name.toLowerCase();
+    if (projectName.includes('ai21') || projectName.includes('max')) return 'bg-black';
     if (projectName.includes('tube uni')) return 'bg-[#fce9c4]'; // Warm beige from the logo
     if (projectName.includes('moma') || projectName.includes('nayax') || projectName.includes('outburn')) return 'bg-white';
     if (projectName.includes('goods')) return 'bg-[#08142c]'; // Dark blue
