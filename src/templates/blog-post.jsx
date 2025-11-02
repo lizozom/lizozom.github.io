@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const classes = {
-  container: 'container mx-auto px-4 md:px-8 max-w-4xl',
+  container: 'container mx-auto px-4 md:px-8 max-w-4xl min-h-[55vh]',
   header: 'mt-8 mb-12',
   title: 'text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4 leading-tight',
   metaWrapper: 'flex flex-wrap gap-4 items-center text-sm',
