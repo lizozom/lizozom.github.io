@@ -16,9 +16,13 @@ const Index = ({ data }) => {
 
   const seoKeywords = [
     'Liza Katz',
+    'lizozom',
+    'Liza K',
+    'Liza Katz lizozom',
     'Full Stack Developer',
     'AI Engineer',
     'GenAI Consultant',
+    'AI Consultant',
     'RAG',
     'Retrieval Augmented Generation',
     'LLM',
@@ -32,10 +36,17 @@ const Index = ({ data }) => {
     'Next.js',
     'Machine Learning',
     'Search Optimization',
+    'Hybrid Search',
+    'Semantic Search',
+    'Vector Search',
     'AI Agents',
     'Ex-Elastic',
     'Software Engineer',
     'Team Lead',
+    'Public Speaker',
+    'Technical Speaker',
+    'AI Workshop',
+    'GenAI Training',
     'Webby Award Winner',
     'Google AI Hackathon Winner'
   ];
@@ -43,10 +54,11 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO 
-        title="Home"
-        description="Liza Katz - Make AI Make Sense | Public speaking, workshops and hands-on Big Data & GenAI consulting."
+        title="Liza Katz (lizozom) - AI Engineer & GenAI Consultant"
+        description="Liza Katz, also known as lizozom, is an AI Engineer and GenAI Consultant specializing in RAG, LLMs, and search technologies. Available for consulting, public speaking, and workshops."
         keywords={seoKeywords}
         image={data.site.siteMetadata.image}
+        disableSiteTitleAppend={true}
       />
       <Hero metadata={data.site.siteMetadata} />
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">

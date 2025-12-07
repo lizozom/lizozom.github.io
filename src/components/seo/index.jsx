@@ -31,6 +31,34 @@ const SEO = ({ description, lang, meta, title, keywords, image, canonical, disab
   const metaImage = image || defaultImage;
   const canonicalUrl = canonical || siteUrl;
 
+  // Structured data for person/professional
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Liza Katz",
+    "alternateName": ["lizozom", "Liza K.", "Liza Katz lizozom"],
+    "url": siteUrl,
+    "image": metaImage,
+    "jobTitle": "AI Engineer & GenAI Consultant",
+    "description": metaDescription,
+    "sameAs": [
+      "https://www.linkedin.com/in/lizak/",
+      "https://github.com/lizozom",
+      "https://stackoverflow.com/users/372086/lizozom"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "RAG (Retrieval Augmented Generation)",
+      "Large Language Models",
+      "Elasticsearch",
+      "OpenSearch",
+      "Python",
+      "TypeScript",
+      "GenAI"
+    ]
+  };
+
   return (
     <Helmet
       htmlAttributes={{
@@ -41,6 +69,12 @@ const SEO = ({ description, lang, meta, title, keywords, image, canonical, disab
         {
           rel: 'canonical',
           href: canonicalUrl,
+        },
+      ]}
+      script={[
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(structuredData),
         },
       ]}
       meta={[

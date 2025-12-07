@@ -1,9 +1,9 @@
 {
-  "name": "devfolio",
+  "name": "lizozom-portfolio",
   "private": true,
-  "description": "A modern and production-ready personal portfolio + blog template built with GatsbyJs and TailwindCSS",
+  "description": "Liza Katz (lizozom) - AI Engineer & GenAI Consultant. Personal portfolio and blog featuring RAG, LLMs, Elasticsearch, and GenAI consulting projects.",
   "version": "0.1.0",
-  "author": "Ryan Fitzgerald",
+  "author": "Liza Katz (lizozom)",
   "dependencies": {
     "gatsby": "^5.13.6",
     "gatsby-image": "^2.4.20",

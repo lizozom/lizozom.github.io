@@ -4,10 +4,11 @@ module.exports = {
     siteUrl: `https://lizozom.com/`,
     // Your Name
     name: 'Liza Katz',
+    alternateName: 'lizozom',
     // Main Site Title
-    title: `Liza Katz | Make AI Make Sense | Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
+    title: `Liza Katz (lizozom) | AI Engineer & GenAI Consultant | Make AI Make Sense`,
     // Description that goes under your name in main bio
-    description: `Helping teams and audiences make AI make sense.`,
+    description: `Liza Katz (also known as lizozom) - Helping teams and audiences make AI make sense through public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Optional: Twitter account handle
     author: null,

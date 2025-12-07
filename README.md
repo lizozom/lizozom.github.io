@@ -14,7 +14,7 @@ A personal portfolio and blog website built with Gatsby, showcasing AI/ML expert
 npm install
 
 # Start development server
-npm run develop
+npm run dev
 # or
 gatsby develop
 
