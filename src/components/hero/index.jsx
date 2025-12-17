@@ -280,7 +280,6 @@ const Hero = ({ metadata }) => {
                 <div>
                   <h1 className={classes.name}>{metadata.name}</h1>
                   <p className={classes.description} style={{marginBottom: '0.25rem'}}>{metadata.description}</p>
-                  <p className={classes.description} style={{fontSize: '0.9em', opacity: '0.8', fontStyle: 'italic'}}>Also known as @lizozom</p>
                   {metadata.subtitle && (
                     <p className={classes.subtitle}>{metadata.subtitle}</p>
                   )}

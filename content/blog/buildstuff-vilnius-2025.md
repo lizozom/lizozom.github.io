@@ -4,6 +4,7 @@ tags: ["conference", "speaking", "RAG", "Elasticsearch", "OpenSearch", "AI", "Li
 date: "2025-10-27"
 description: "I'll be speaking at Build Stuff in Vilnius, Lithuania on the 3rd of December 2025. Looking forward to it!"
 featured: true
+image: "https://buildstuff.events/cdn/shop/files/Build_Stuff_2023_logo2png-13.png"
 ---
 
 I'll be speaking at [Build Stuff](https://www.buildstuff.events/) in Vilnius, Lithuania this December. Looking forward to it!

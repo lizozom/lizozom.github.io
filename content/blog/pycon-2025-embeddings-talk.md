@@ -5,6 +5,8 @@ author: "Liza Katz"
 description: "I'm excited to announce that I'll be speaking at PyCon Israel 2025 with a talk that demystifies embeddings for software engineers - no ML PhD required!"
 ---
 
+[PyCon WTF Are Embeddings recording](https://www.youtube.com/watch?v=DJPBdpzQnDs)
+
 I'm thrilled to announce that I'll be speaking at [**PyCon Israel 2025**](https://python.org.il/) this September! My talk, titled **"WTF Are Embeddings? A software engineer's take"**, is scheduled for September 9th at 15:30 in Hall 7.
 
 ## The Talk: WTF Are Embeddings?

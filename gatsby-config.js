@@ -8,7 +8,7 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz (lizozom) | AI Engineer & GenAI Consultant | Make AI Make Sense`,
     // Description that goes under your name in main bio
-    description: `Liza Katz (also known as lizozom) - Helping teams and audiences make AI make sense through public speaking, workshops and hands-on Big Data & GenAI consulting.`,
+    description: `Helping teams and audiences make AI make sense through public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Optional: Twitter account handle
     author: null,
