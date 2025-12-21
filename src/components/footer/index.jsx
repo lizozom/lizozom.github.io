@@ -21,8 +21,8 @@ const Footer = () => {
             © {currentYear} Liza Katz. All rights reserved.
           </p>
           <nav className={classes.links}>
-            <Link className={classes.link} to="/about-liza-katz">
-              About
+            <Link className={classes.link} to="/liza-katz-cv">
+              Experience
             </Link>
             <Link className={classes.link} to="/blog">
               Blog

@@ -6,6 +6,8 @@ author: "Liza Katz"
 image: "https://astrix.security/wp-content/uploads/2024/06/Group-1261165618.svg"
 ---
 
+This workshop was delivered as part of my work with [Big Data Boutique](https://bigdataboutique.com/).
+
 Had a fantastic time delivering an **Advanced RAG Workshop** at [Astrix Security](https://astrix.security/)! This was a deep dive into building production-grade LLM applications with a focus on Retrieval-Augmented Generation techniques.
 
 ## What We Covered

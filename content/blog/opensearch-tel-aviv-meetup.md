@@ -5,7 +5,7 @@ author: "Liza Katz"
 description: "I had the pleasure of presenting at the inaugural OpenSearch Tel Aviv meetup, sharing insights about embeddings in a fun and educational talk."
 ---
 
-I had the pleasure of presenting at the very first **OpenSearch Tel Aviv meetup** this past Monday! The event, aptly titled "Search & Generate," brought together the intersection of OpenSearch and Generative AI in a fantastic community gathering.
+I had the pleasure of presenting at the very first **OpenSearch Tel Aviv meetup** hosted by [Big Data Boutique](https://bigdataboutique.com/) this past Monday! The event, aptly titled "Search & Generate," brought together the intersection of OpenSearch and Generative AI in a fantastic community gathering.
 
 ## The Event: Search Meets Story
 

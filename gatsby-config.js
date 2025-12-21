@@ -6,7 +6,7 @@ module.exports = {
     name: 'Liza Katz',
     alternateName: 'lizozom',
     // Main Site Title
-    title: `Liza Katz (lizozom) | AI Engineer & GenAI Consultant | Make AI Make Sense`,
+    title: `Liza Katz | GenAI & Search Consultant | Make AI Make Sense`,
     // Description that goes under your name in main bio
     description: `Helping teams and audiences make AI make sense through public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
@@ -19,13 +19,17 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/lizak/`,
     // Content of the About Me section
-    about: `Seasoned software engineer and team lead specializing in GenAI, search, and scalable systems. I build RAG applications, AI agents, and hybrid search solutions using Python, TypeScript, Next.js, and modern frameworks.
-    <br/><br/>
-    As a consultant, I've delivered end-to-end GenAI projects for clients across industries. My background spans ad-tech, finance, and big data with deep expertise in Elasticsearch, OpenSearch, and LLM-powered applications.
-    <br/><br/>
-    Recent wins: <a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award</a> for "Human or Not" and Google AI Hackathon winner for "Tube Uni."
-    <br/><br/>
-    <b>Available for GenAI consulting, partnerships, public speaking, and private workshops.</b>`,
+    about: `<p>Hi, I'm <b>Liza Katz</b>.</p>
+<br/>
+<p>On the internet, I’m <b>Lizozom</b>. In the industry, I’m a Senior Software Engineer and Consultant specializing in Search Infrastructure and Generative AI.</p>
+<br/>
+<p>With over 20 years of experience, I help companies navigate the complex intersection of traditional search (Elasticsearch/OpenSearch) and modern AI implementation. Currently, I work with BigData Boutique, where I focus on Retrieval-Augmented Generation (RAG), vector embeddings, and building scalable data architectures.<p>
+<br/>
+<p>I don't just write code; I teach it. I’m the creator of the "WTF Are Embeddings?" course and a frequent speaker at events like PyCon Israel and OpenSearchCon.</p>
+
+<p>When I’m not debugging an LLM pipeline or researching multimodal embeddings, I’m designing interiors, listening to ABBA, or negotiating with my three "opinionated" cats: Pita, Chooka, and Chonky.</p>
+<br/><p>
+    <b>Available for GenAI consulting, partnerships, public speaking, and private workshops.</b></p>`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -38,7 +42,7 @@ module.exports = {
       },
       {
         id: 'max',
-        name: 'Scout AI Agent',
+        name: 'Scout AI Agent [BDB]',
         description:
           'Built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. Integrates multiple geopolitical datasets for proactive threat mitigation. AWS, OpenSearch, Claude.',
         link: 'https://www.max-security.com/',
@@ -53,7 +57,7 @@ module.exports = {
         image_link: "https://www.cover.co.il/wp-content/uploads/2025/03/cover-blue-logo.png"
       },
       {
-        name: 'Hybrid Search optimization',
+        name: 'Hybrid Search optimization [BDB]',
         description:
           'Developed hybrid search combining keyword and semantic search for knowledge base platform. Improved customer article discovery and support efficiency. Elasticsearch, AWS Bedrock.',
         link: 'https://www.screensteps.com/',
