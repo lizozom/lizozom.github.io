@@ -54,8 +54,8 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO 
-        title="Liza Katz (lizozom) - AI Engineer & GenAI Consultant"
-        description="Liza Katz, also known as lizozom, is an AI Engineer and GenAI Consultant specializing in RAG, LLMs, and search technologies. Available for consulting, public speaking, and workshops."
+        title="Liza Katz - AI Engineer & GenAI Consultant"
+        description="Liza Katz is an AI Engineer and GenAI Consultant specializing in RAG, LLMs, and search technologies. Available for consulting, public speaking, and workshops."
         keywords={seoKeywords}
         image={data.site.siteMetadata.image}
         disableSiteTitleAppend={true}

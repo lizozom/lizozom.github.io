@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://lizozom.com/`,
+    siteUrl: `https://lizakatz.dev/`,
     // Your Name
     name: 'Liza Katz',
     alternateName: 'lizozom',
@@ -12,7 +12,7 @@ module.exports = {
     subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
     // Optional: Twitter account handle
     author: null,
-    image: 'https://lizozom.com/og.png',
+    image: 'https://lizakatz.dev/og.png',
     stackoverflow: 'https://stackoverflow.com/users/372086/lizozom',
     // Optional: Github account URL
     github: `https://github.com/lizozom`,
@@ -137,7 +137,7 @@ module.exports = {
       {
         name: 'Independent Consultant & Developer',
         description: '<b>Consultant & Full-Stack Developer, January 2023 - Present</b><br/>Worked with several customers including AI21, mygoods.io, Outburn LTD and more. I focus on projects that focus on developing LLM-powered user experiences, powered by big data and search capabilities',
-        link: 'https://lizozom.com/',
+        link: 'https://lizakatz.dev/',
       },
       {
         name: 'Elastic',
