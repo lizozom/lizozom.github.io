@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://lizozom.com/sitemap-index.xml
+Sitemap: https://lizakatz.dev/sitemap-index.xml
