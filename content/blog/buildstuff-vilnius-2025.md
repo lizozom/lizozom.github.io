@@ -9,6 +9,8 @@ image: "https://buildstuff.events/cdn/shop/files/Build_Stuff_2023_logo2png-13.pn
 
 I'll be speaking at [Build Stuff](https://www.buildstuff.events/) in Vilnius, Lithuania this December. Looking forward to it!
 
+![Build Stuff Conference 2025](/buildstuff-conference-2025-liza-katz.jpeg)
+
 ## Building Advanced RAGs with Elasticsearch / OpenSearch
 
 RAG (Retrieval Augmented Generation) is built in three steps: understanding the query, executing a retrieval step, and generating a response. Each step has its own unique characteristics and challenges.
