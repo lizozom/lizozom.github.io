@@ -34,17 +34,17 @@ module.exports = {
     projects: [
       {
         id: 'ai21',
-        name: 'Human or Not [AI21]',
+        name: 'Human or Not',
         description:
-          '<b>**<a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award Winner!</a>**</b> A Social Turing Game. Chat with someone for two minutes, and try to figure out if it was a fellow human or an AI bot. Think you can tell the difference?',
+          'AI21 Labs is a leading AI company building foundation models and AI systems. Human or Not is a Social Turing Game where you chat with someone for two minutes and try to figure out if it was a fellow human or an AI bot.<br/><br/>I led the development of the project and scaled the system to handle millions of conversations.<br/><br/><b>**<a href="https://winners.webbyawards.com/2024/ai-metaverse-virtual/ai-apps-and-experiences/media-entertainment/288120/human-or-not" target="_blank">Webby Award Winner!</a>**</b>',
         link: 'https://humanornot.ai/',
         image_link: "https://assets.recogmedia.net/1/139/Entry_Uploads/288120-thumb.jpg",
       },
       {
         id: 'max',
-        name: 'Scout AI Agent [BDB]',
+        name: 'Scout AI Agent',
         description:
-          'Built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. Integrates multiple geopolitical datasets for proactive threat mitigation. AWS, OpenSearch, Claude.',
+          'Max Security is a global risk management and intelligence company providing geopolitical analysis and security consulting.<br/><br/>I built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. The system integrates multiple geopolitical datasets for proactive threat mitigation using AWS, OpenSearch, and Claude.<br/><br/>Presented at AWS re:Invent.',
         link: 'https://www.max-security.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
       },
@@ -52,46 +52,46 @@ module.exports = {
         id: 'cover',
         name: 'AI Powered Data Analytics',
         description:
-          'Designed data analytics pipelines and RAG architecture for an insurance AI agent. OpenSearch, OpenAI, n8n.',
+          'Cover is an Israeli insurance technology company that simplifies insurance management for consumers.<br/><br/>I designed and implemented an AI powered data analytics pipeline to enable intelligent policy analysis and customer support automation using ClickHouse and OpenAI.',
         link: 'https://www.cover.co.il/',
         image_link: "https://www.cover.co.il/wp-content/uploads/2025/03/cover-blue-logo.png"
       },
       {
-        name: 'Hybrid Search optimization [BDB]',
+        name: 'Hybrid Search Bar',
         description:
-          'Developed hybrid search combining keyword and semantic search for knowledge base platform. Improved customer article discovery and support efficiency. Elasticsearch, AWS Bedrock.',
+          'ScreenSteps is a knowledge base platform that helps organizations create and share documentation for employee training and support.<br/><br/>I developed hybrid search combining keyword and semantic search, significantly improving customer article discovery and support efficiency using Elasticsearch and AWS Bedrock.',
         link: 'https://www.screensteps.com/',
         image_link: "https://www.screensteps.com/hubfs/2024/Brand/Elements/2024%20Logo%20Updates/Primary%20Logos/0524-Logos-SS-Black.svg"
       },
       {
         name: 'Tube Uni',
         description:
-          '<b>**<a href="https://devpost.com/software/tube-uni" target="_blank">Google AI Hackathon Winner!</a>**</b> An AI-powered application that generates custom podcasts on any topic, using Gemini 1.5 Pro.',
-        link: 'https://tubeuni.app/',
+          '<b>**<a href="https://devpost.com/software/tube-uni" target="_blank">Google AI Hackathon Winner!</a>**</b><br/><br/>Tube Uni is an AI-powered application that generates custom podcasts on any topic.<br/><br/>I built this project using Gemini 1.5 Pro, creating a system that transforms any subject into engaging audio content with natural-sounding conversations.',
+        link: 'https://devpost.com/software/tube-uni',
         image_link: "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/874/400/datas/medium.png"
       },
       {
         name: 'MoMa AI Assistant',
         description:
-          'Built ReAct AI assistant for vending machine operators, improving maintenance and customer service. Custom OpenAI deployment on Azure with <b>prompt engineering, automation, evaluation and monitoring</b>.',
+          'Nayax is a global fintech company providing cashless payment and management solutions for unattended retail and vending machines.<br/><br/>I built a ReAct AI assistant for vending machine operators, improving maintenance workflows and customer service. The solution uses a custom OpenAI deployment on Azure with prompt engineering, automation, evaluation, and monitoring.',
         link: 'https://www.nayax.com/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn5BlEfjbCB1kGKNSCyeHwxyLn7tfg3Suxw&s"
       },
       {
         id: 'goods',
-        name: 'Elasticsearch integration and analytics',
+        name: 'Elasticsearch Analytics',
         description:
-          'Developed analytics strategy and Elasticsearch integration for order fulfillment platform. Built customer dashboards for inventory management and order analytics.',
+          'mygoods is an order fulfillment platform that helps e-commerce businesses manage inventory and shipping operations.<br/><br/>I developed the analytics strategy and Elasticsearch integration, building customer dashboards for inventory management and order analytics that provide real-time business insights.',
         link: 'https://mygoods.io/',
         image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q4dWU_TLV0PxhS10PVL8VKHQ2kDLyjJDeA&s"
       },
       {
         id: 'outburn',
-        name: 'Automation and OpenSource infra',
-        image_link: "https://outburn.health/wp-content/uploads/2022/01/outburn-logo-white-medium.png",
+        name: 'Open Source Infrastructure',
+        image_link: "https://outburn.health/wp-content/uploads/Outburn-Logo.webp",
         description:
-          'Prepared FHIR-based healthcare API codebase for open source contributions. Built automation pipeline with GitHub Actions, TypeScript implementation, and contribution documentation.',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Outburn is a healthcare technology company specializing in FHIR-based interoperability solutions for medical data exchange.<br/><br/>I prepared their healthcare API codebase for open source contributions, building an automation pipeline with GitHub Actions, TypeScript implementation, and comprehensive contribution documentation.',
+        link: 'https://github.com/Outburn-IL/fume-community',
       },
       // {
       //   name: 'Catomolo infrastructure',
@@ -99,13 +99,13 @@ module.exports = {
       //     'Modernized infrastructure for Israeli Environmental Protection Agency game. Built Next.js game server and implemented comprehensive monitoring.',
       //   link: 'https://play.google.com/store/apps/details?id=com.mooistudios.dedi',
       // },
-      {
-        name: 'ncnn WebAssembly YOLOV5',
-        image_link: "https://avatars.githubusercontent.com/u/26833451?s=200&v=4",
-        description:
-          'Open source contribution enabling YOLOV5 inference directly in browsers via WebAssembly.',
-        link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',
-      },
+      // {
+      //   name: 'ncnn WebAssembly YOLOV5',
+      //   image_link: "https://avatars.githubusercontent.com/u/26833451?s=200&v=4",
+      //   description:
+      //     'Open source contribution enabling YOLOV5 inference directly in browsers via WebAssembly.',
+      //   link: 'https://github.com/lizozom/ncnn-webassembly-YOLOV5',
+      // },
       // {
       //   name: 'Custom Kibana Theme Plugin',
       //   description:

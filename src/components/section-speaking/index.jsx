@@ -4,7 +4,7 @@ import Section from '../section';
 const classes = {
   grid: 'grid md:grid-cols-2 gap-6 lg:gap-8',
   card: 'group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-neutral-200 hover:border-primary-300 hover:-translate-y-1',
-  title: 'text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary-500 transition-colors duration-200',
+  title: 'font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary-500 transition-colors duration-200',
   description: 'text-neutral-600 leading-relaxed text-sm mb-4',
   list: 'list-disc pl-5 text-neutral-600 space-y-2 text-sm leading-relaxed',
   ctaWrapper: 'mt-8 text-center',
