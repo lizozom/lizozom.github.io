@@ -89,7 +89,7 @@ module.exports = {
         image_link: "https://outburn.health/wp-content/uploads/Outburn-Logo.webp",
         description:
           'Outburn is a healthcare technology company specializing in FHIR-based interoperability solutions for medical data exchange.<br/><br/>I prepared their healthcare API codebase for open source contributions, building an automation pipeline with GitHub Actions, TypeScript implementation, and comprehensive contribution documentation.',
-        link: 'https://github.com/Outburn-IL/fume-community',
+        link: 'https://outburn.health/',
       },
       // {
       //   name: 'Catomolo infrastructure',
