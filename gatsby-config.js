@@ -8,8 +8,8 @@ module.exports = {
     // Main Site Title
     title: `Liza Katz | GenAI & Search Consultant | Make AI Make Sense`,
     // Description that goes under your name in main bio
-    description: `Helping teams and audiences make AI make sense through public speaking, workshops and hands-on Big Data & GenAI consulting.`,
-    subtitle: `Public speaking, workshops and hands-on Big Data & GenAI consulting.`,
+    description: `Pragmatic Search & AI Engineering.`,
+    subtitle: `End-to-end GenAI consulting - from use case discovery to production-ready implementation.`,
     // Optional: Twitter account handle
     author: null,
     image: 'https://lizakatz.dev/og.png',

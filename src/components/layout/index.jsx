@@ -8,7 +8,7 @@ const classes = {
   svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children, metadata }) => {
   return (
     <div className={classes.outerWrapper}>
       <svg
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         />
       </svg>
       <div className={classes.wrapper}>{children}</div>
-      <Footer />
+      <Footer metadata={metadata} />
     </div>
   );
 };

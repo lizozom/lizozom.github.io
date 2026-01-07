@@ -50,6 +50,7 @@ const Navigation = ({ variant = 'hero' }) => {
     { label: 'Speaking', action: () => scrollToSection('speaking') },
     { label: 'Projects', action: () => scrollToSection('projects') },
     { label: 'Blog', action: () => scrollToSection('posts') },
+    { label: 'Contact', action: () => scrollToSection('contact') },
     { label: 'About', href: '/about-liza-katz' },
   ];
 

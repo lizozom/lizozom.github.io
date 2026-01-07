@@ -5,6 +5,7 @@ import React from 'react';
 import Hero from '../components/hero';
 import Layout from '../components/layout';
 import SectionBlog from '../components/section-blog';
+import SectionContact from '../components/section-contact';
 import SectionProjects from '../components/section-projects';
 import SectionSpeaking from '../components/section-speaking';
 import SEO from '../components/seo';
@@ -52,7 +53,7 @@ const Index = ({ data }) => {
   ];
 
   return (
-    <Layout>
+    <Layout metadata={data.site.siteMetadata}>
       <SEO 
         title="Liza Katz - AI Engineer & GenAI Consultant"
         description="Liza Katz is an AI Engineer and GenAI Consultant specializing in RAG, LLMs, and search technologies. Available for consulting, public speaking, and workshops."
@@ -65,6 +66,7 @@ const Index = ({ data }) => {
         <SectionSpeaking />
         {projects && projects.length && <SectionProjects projects={projects} />}
         {!noBlog && <SectionBlog posts={posts} />}
+        <SectionContact />
       </div>
     </Layout>
   );
