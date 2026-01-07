@@ -19,17 +19,15 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/lizak/`,
     // Content of the About Me section
-    about: `<p>Hi, I'm <b>Liza Katz</b>.</p>
+    about: `<p>Hi, I'm <b>Liza Katz</b>. (aka Lizozom)</p>
 <br/>
-<p>On the internet, I’m <b>Lizozom</b>. In the industry, I’m a Senior Software Engineer and Consultant specializing in Search Infrastructure and Generative AI.</p>
+<p>I am a Senior Software Engineer and Consultant with over 20 years of experience building large-scale backend systems.</p>
 <br/>
-<p>With over 20 years of experience, I help companies navigate the complex intersection of traditional search (Elasticsearch/OpenSearch) and modern AI implementation. Currently, I work with BigData Boutique, where I focus on Retrieval-Augmented Generation (RAG), vector embeddings, and building scalable data architectures.<p>
+<p>While the industry chases hype, I focus on the complex intersection of Search Infrastructure (Elasticsearch/OpenSearch) and Generative AI. I help companies move RAG and vector search from "promising POC" to scalable production architecture.</p>
 <br/>
-<p>I don't just write code; I teach it. I’m the creator of the "WTF Are Embeddings?" course and a frequent speaker at events like PyCon Israel and OpenSearchCon.</p>
-
-<p>When I’m not debugging an LLM pipeline or researching multimodal embeddings, I’m designing interiors, listening to ABBA, or negotiating with my three "opinionated" cats: Pita, Chooka, and Chonky.</p>
-<br/><p>
-    <b>Available for GenAI consulting, partnerships, public speaking, and private workshops.</b></p>`,
+<p>Beyond consulting, I believe in demystifying technology. I created the "WTF Are Embeddings?" talk, I deliver workshops, lead hackathons and speak frequently at events like PyCon and BuildStuff.</p>
+<br/>
+<p>When I'm not debugging pipelines, I'm designing interiors, listening to ABBA, or negotiating with my three cats: Pita, Chooka, and Chonky.</p>`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
