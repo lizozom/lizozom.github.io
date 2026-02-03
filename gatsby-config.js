@@ -39,12 +39,11 @@ module.exports = {
         image_link: "https://assets.recogmedia.net/1/139/Entry_Uploads/288120-thumb.jpg",
       },
       {
-        id: 'max',
-        name: 'Scout AI Agent',
+        name: 'AI Security Agent',
         description:
-          'Max Security is a global risk management and intelligence company providing geopolitical analysis and security consulting.<br/><br/>I built an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. The system integrates multiple geopolitical datasets for proactive threat mitigation using AWS, OpenSearch, and Claude.<br/><br/>Presented at AWS re:Invent.',
-        link: 'https://www.max-security.com/',
-        image_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84qZcNuCCk7TYFKigrt7NEYn06Az4MM7J6w&s"
+          'Built for a global risk management and intelligence company providing geopolitical analysis and security consulting.<br/><br/>I developed an AI assistant providing comprehensive threat intelligence and geo-spatial analysis. The system integrates multiple geopolitical datasets for proactive threat mitigation using AWS, OpenSearch, and Claude.<br/><br/>Presented at AWS re:Invent.',
+        link: '',
+        image_link: ''
       },
       {
         id: 'cover',
@@ -57,9 +56,9 @@ module.exports = {
       {
         name: 'Hybrid Search Bar',
         description:
-          'ScreenSteps is a knowledge base platform that helps organizations create and share documentation for employee training and support.<br/><br/>I developed hybrid search combining keyword and semantic search, significantly improving customer article discovery and support efficiency using Elasticsearch and AWS Bedrock.',
-        link: 'https://www.screensteps.com/',
-        image_link: "https://www.screensteps.com/hubfs/2024/Brand/Elements/2024%20Logo%20Updates/Primary%20Logos/0524-Logos-SS-Black.svg"
+          'Built for a knowledge base platform that helps organizations create and share documentation for employee training and support.<br/><br/>I developed hybrid search combining keyword and semantic search, significantly improving customer article discovery and support efficiency using Elasticsearch and AWS Bedrock.',
+        link: '',
+        image_link: ''
       },
       {
         name: 'Tube Uni',

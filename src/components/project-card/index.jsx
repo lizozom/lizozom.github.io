@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+const FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5z'/%3E%3Cpath d='M2 17l10 5 10-5'/%3E%3Cpath d='M2 12l10 5 10-5'/%3E%3C/svg%3E";
+
 const classes = {
   card: 'group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-neutral-200 hover:border-primary-300 hover:-translate-y-1 cursor-pointer',
   imageWrapper: 'relative h-48 overflow-hidden flex items-center justify-center p-6',
@@ -80,18 +82,16 @@ const ProjectCard = ({ id, name, description, link, image_link, featured = false
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
       >
-        {image_link && (
-          <div className={`${classes.imageWrapper} ${getBackgroundColor()}`}>
-            {isWinner && <span className={classes.badge}>Award Winner</span>}
-            <img
-              src={image_link}
-              alt={name}
-              className={classes.image}
-              onError={(e) => { e.target.style.display = 'none'; }}
-            />
-            <div className={classes.imageOverlay} />
-          </div>
-        )}
+        <div className={`${classes.imageWrapper} ${getBackgroundColor()}`}>
+          {isWinner && <span className={classes.badge}>Award Winner</span>}
+          <img
+            src={image_link && image_link.length > 0 ? image_link : FALLBACK_IMAGE}
+            alt={name}
+            className={classes.image}
+            onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+          />
+          <div className={classes.imageOverlay} />
+        </div>
 
         <div className={classes.content}>
           <h3 className={classes.title}>{name}</h3>
@@ -134,12 +134,15 @@ const ProjectCard = ({ id, name, description, link, image_link, featured = false
               </svg>
             </button>
 
-            {image_link && (
-              <div className={`${classes.overlayImageWrapper} ${getBackgroundColor()}`}>
-                {isWinner && <span className={classes.overlayBadge}>Award Winner</span>}
-                <img src={image_link} alt={name} className={classes.overlayImage} />
-              </div>
-            )}
+            <div className={`${classes.overlayImageWrapper} ${getBackgroundColor()}`}>
+              {isWinner && <span className={classes.overlayBadge}>Award Winner</span>}
+              <img
+                src={image_link && image_link.length > 0 ? image_link : FALLBACK_IMAGE}
+                alt={name}
+                className={classes.overlayImage}
+                onError={(e) => { e.target.src = FALLBACK_IMAGE; }}
+              />
+            </div>
 
             <div className={classes.overlayContent}>
               <h3 className={classes.overlayTitle}>{name}</h3>
@@ -149,7 +152,7 @@ const ProjectCard = ({ id, name, description, link, image_link, featured = false
                 dangerouslySetInnerHTML={{ __html: description }}
               />
 
-              {link && (
+              {link && link.length > 0 && (
                 <a
                   href={link}
                   target="_blank"
